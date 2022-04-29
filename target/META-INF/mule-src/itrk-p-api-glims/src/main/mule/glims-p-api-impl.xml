@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:customLogger="http://www.mulesoft.org/schema/mule/customLogger"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd 
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/customLogger http://www.mulesoft.org/schema/mule/customLogger/current/mule-customLogger.xsd">
+	<customLogger:config name="Custom_Logger_Config" doc:name="Custom Logger Config" doc:id="c16601be-4a4f-43fc-b188-d8aeb898d55f" env="${mule.env}"/>
+	<sub-flow name="glims-authentication-impl-subflow" doc:id="d21fdad1-5cec-41db-9a9c-21b054c75cf7" >
+	<logger level="INFO" doc:name="Logger" doc:id="2c2e2436-ff48-4ad7-a85a-dedab56c42be" message="Customer Name is : #[vars.customerName]" />
+			<ee:cache doc:name="Cache" doc:id="78a8994b-b660-42b2-a20d-f46fac0e1826" cachingStrategy-ref="customer_name_caching_strategy">
+			<http:request method="POST" doc:name="authenticationRequest" doc:id="c7f6e24d-8811-414c-8e73-0f9b9e552142" path="${https.requestor.loginPath}" config-ref="HTTP_Request_configuration" responseTimeout="${https.requestor.responseTimeout}">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"client_secret" : vars.clientSecret,
+	"Content-Type" : "application/xml",
+	"client_id" : vars.clientId,
+	"x-correlation-id": vars.correlationId
+}]]]></http:headers>
+			<http:query-params><![CDATA[#[output application/java
+---
+{
+	"customerName" : vars.customerName
+}]]]></http:query-params>
+		</http:request>
+			<logger level="INFO" doc:name="Logger" doc:id="a67ca173-1515-4e51-be2b-9aada06031cc" message="Retrieved New Session ID from Navarik for the customer: #[vars.customerName] "/>
+		
+</ee:cache>
+		<set-variable value="#[%dw 2.0
+output application/xml
+---
+payload]" doc:name="loginDetails" doc:id="76291e7b-6e91-4eb8-8341-6b374fc2a393" variableName="loginDetails"/>
+		<logger level="INFO" doc:name="Authentication Response" doc:id="ba4ea5e3-d2ea-4743-9a62-d290971dab78" message="Authentication Response : #[vars.loginDetails]" />
+		<logger level="INFO" doc:name="End Logger" doc:id="f9f3dc1e-429c-4daf-9e18-8ed084f477e4" message="Authentication Response Received from Navarik"/>
+	
+	
+</sub-flow>
+	<sub-flow name="searchInspectionActualResult-Impl-Flow" doc:id="33e99217-9075-4b36-8361-07dec8c121fd" >
+		<customLogger:start doc:name="Start" doc:id="6fcb9167-9760-458d-8332-f66ed571d501" config-ref="Custom_Logger_Config">
+			<customLogger:attributes><![CDATA[#[%dw 2.0
+output application/json
+---
+{
+"customerName": attributes.queryParams.customerName default "",
+"nominationNumber": attributes.queryParams.nominationNumber default "",
+"requestPath" : attributes.rawRequestPath,
+"method" : attributes.method,
+"Content-Type" : attributes.headers."content-type"
+}]]]></customLogger:attributes>
+		</customLogger:start>
+		<ee:transform doc:name="Transform Message" doc:id="03796cb0-2ac2-4c01-8bf5-3d68f65cccf0" >
+			<ee:message >
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable variableName="clientId" ><![CDATA[%dw 2.0
+output application/json
+---
+p('secure::api.clientId')
+]]></ee:set-variable>
+				<ee:set-variable variableName="clientSecret" ><![CDATA[%dw 2.0
+output application/json
+---
+p('secure::api.clientSecret')]]></ee:set-variable>
+				<ee:set-variable variableName="customerName" ><![CDATA[%dw 2.0
+output application/json
+---
+attributes.queryParams.customerName default ""]]></ee:set-variable>
+				<ee:set-variable variableName="nominationNumber" ><![CDATA[%dw 2.0
+output application/json
+---
+attributes.queryParams.nominationNumber default ""]]></ee:set-variable>
+				<ee:set-variable variableName="correlationId" ><![CDATA[%dw 2.0
+output application/json
+---
+uuid()]]></ee:set-variable>
+			
+
+</ee:variables>
+		</ee:transform>
+		<flow-ref doc:name="glims-authentication-impl-subflow" doc:id="d15ff488-ff33-4f9a-b0d3-b0574c511e17" name="glims-authentication-impl-subflow" />
+		<choice doc:name="Choice" doc:id="28490193-43de-4a6d-a5ed-2982ee01f315" >
+			<when expression="#[%dw 2.0 output application/json --- !isEmpty(vars.loginDetails.loginResponse.SessionName) and !isEmpty(vars.loginDetails.loginResponse.SessionId)]">
+				<http:request method="GET" doc:name="Search Inspection Actual Result - Request" doc:id="cdb90993-4c23-4ba6-bb9b-ae83f3db279d" config-ref="HTTP_Request_configuration" path="${https.requestor.searchInspectionPath}" responseTimeout="${https.requestor.responseTimeout}">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"sessionName" : vars.loginDetails.loginResponse.SessionName,
+	"client_secret" : vars.clientSecret,
+	"sessionId" : vars.loginDetails.loginResponse.SessionId,
+	"client_id" : vars.clientId,
+	"x-correlation-id": vars.correlationId
+}]]]></http:headers>
+			<http:query-params><![CDATA[#[output application/java
+---
+{
+	"customerName" : vars.customerName,
+	"nominationNumber" : vars.nominationNumber
+}]]]></http:query-params>
+		</http:request>
+				<logger level="INFO" doc:name="Response of Search Inspection Actual Result" doc:id="33b31952-67b9-4af5-a8ce-cd4872eef342" message="#[payload]" />
+				<ee:transform doc:name="Filter The Data" doc:id="6bb93825-76a4-42ad-9127-8c825087b49e">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+ns nis https://nis.navarik.net/1.8
+var results = payload.searchInspectionActualResultResponse.Results mapObject ((value, key, index) -> {
+		(nis#InspectionActualResult @(nis#referenceNumber : value.@referenceNumber, nis#revisionNumber : value.@revisionNumber): value)if(value.WorksheetStatusCode == "DRAFT" or value.WorksheetStatusCode == "QUANTITY_SUBMITTED" and value.IsQualityInspectionRequired as Number == 1 and value.IsQuantityInspectionRequired as Number == 1)
+	})
+---
+{
+	nis#searchInspectionActualResultResponse:{
+	nis#TotalResultsAvailable: if(!isEmpty(results)) sizeOf(results.*InspectionActualResult) else 0,
+  	nis#FirstResultPosition:payload.searchInspectionActualResultResponse.FirstResultPosition,
+  	nis#ResultsPerPage:payload.searchInspectionActualResultResponse.ResultsPerPage,
+	nis#Results : results
+	}
+	
+}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+				<logger level="INFO" doc:name="Filtered Search Inspection Actual Result Response" doc:id="df85050a-3b82-48a3-93c9-494eed6db808" message="#[payload]" />
+				<choice doc:name="Choice" doc:id="0cf9af1b-d0b7-42b7-8906-f400cc68b86c" >
+					<when expression='#[%dw 2.0
+output application/json
+---
+isEmpty(payload.searchInspectionActualResultResponse.Results)]'>
+						<set-payload value="Received results from Navarik but after applied the filter condition of Nomination Status, there is no results to display" doc:name="Set Payload" doc:id="ac88c527-5b73-422c-a942-0bee2ac073f2" />
+					</when>
+					<otherwise>
+						<ee:transform doc:name="Transform Message" doc:id="f695be64-7c02-4e46-a917-74a818fbc33a" >
+							<ee:message >
+								<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+payload]]></ee:set-payload>
+							</ee:message>
+						</ee:transform>
+					</otherwise>
+				</choice>
+			</when>
+		</choice>
+		<customLogger:end doc:name="End" doc:id="0f578f18-3235-4c7d-8f60-80138f7a4a5f" config-ref="Custom_Logger_Config" />
+	
+	</sub-flow>
+    <sub-flow name="searchParcel-Impl-subFlow" doc:id="2e0f76b3-8e9a-47ba-95b4-cdd957116e5e" >
+    <customLogger:start doc:name="Start" doc:id="19ab6bd2-9158-4ab7-ad47-5597a59331cd" config-ref="Custom_Logger_Config">
+			<customLogger:attributes><![CDATA[#[%dw 2.0
+output application/json
+---
+{
+"customerName": attributes.queryParams.customerName default "",
+"parcelReferenceNumber": attributes.queryParams.parcelReferenceNumber default "",
+"requestPath" : attributes.rawRequestPath,
+"method" : attributes.method,
+"Content-Type" : attributes.headers."content-type"
+}]]]></customLogger:attributes>
+		</customLogger:start>
+		<ee:transform doc:name="Transform Message" doc:id="d2226f7c-3ae8-4f4b-93a5-f3769b7414b6" >
+			<ee:message />
+			<ee:variables >
+				<ee:set-variable variableName="clientId" ><![CDATA[%dw 2.0
+output application/json
+---
+p('secure::api.clientId')
+]]></ee:set-variable>
+				<ee:set-variable variableName="clientSecret" ><![CDATA[%dw 2.0
+output application/json
+---
+p('secure::api.clientSecret')]]></ee:set-variable>
+				<ee:set-variable variableName="parcelReferenceNumber" ><![CDATA[%dw 2.0
+output application/java
+---
+attributes.queryParams.parcelReferenceNumber default ""]]></ee:set-variable>
+				<ee:set-variable variableName="customerName" ><![CDATA[%dw 2.0
+output application/java
+---
+attributes.queryParams.customerName default ""]]></ee:set-variable>
+				<ee:set-variable variableName="correlationId" ><![CDATA[%dw 2.0
+output application/json
+---
+uuid()]]></ee:set-variable>
+			
+
+</ee:variables>
+		</ee:transform>
+		<flow-ref doc:name="glims-authentication-impl-subflow" doc:id="e2212b1f-0d4b-4e93-ad64-4760c8a5427f" name="glims-authentication-impl-subflow" />
+		<choice doc:name="Choice" doc:id="dc854fa8-1b49-47cf-aed6-cd5187050c96" >
+			<when expression="#[%dw 2.0 output application/json --- !isEmpty(payload.loginResponse.SessionName) and !isEmpty(payload.loginResponse.SessionId)]">
+				<http:request method="GET" doc:name="Search Parcel - Request" doc:id="0b149f62-0394-4383-a8eb-be17b2e74bc8" config-ref="HTTP_Request_configuration" responseTimeout="${https.requestor.responseTimeout}" path="${https.requestor.searchParcelPath}">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"sessionName" : vars.loginDetails.loginResponse.SessionName,
+	"client_secret" : vars.clientSecret,
+	"sessionId" : vars.loginDetails.loginResponse.SessionId,
+	"client_id" : vars.clientId,
+	"x-correlation-id": vars.correlationId
+}]]]></http:headers>
+			<http:query-params><![CDATA[#[output application/java
+---
+{
+	"customerName" : vars.customerName,
+	"parcelReferenceNumber" : vars.parcelReferenceNumber
+}]]]></http:query-params>
+		</http:request>
+				<logger level="INFO" doc:name="Search Parcel Response" doc:id="cd9d49b0-1b2e-41c7-9e94-9ae064a48730" message="#[payload]" />
+			</when>
+		</choice>
+		<customLogger:end doc:name="End" doc:id="2adde143-468a-4006-91be-f356d0987a4b" config-ref="Custom_Logger_Config" />
+    </sub-flow>
+	<sub-flow name="putInspectionWorksheet-Impl-subFlow" doc:id="8f229823-b98b-4a08-b99b-07b4b9cd711e" >
+	<customLogger:start doc:name="Start" doc:id="a4d4e037-0177-403c-a6f0-eabe7e50e9e2" config-ref="Custom_Logger_Config">
+			<customLogger:attributes><![CDATA[#[%dw 2.0
+output application/json
+---
+{
+"customerName": attributes.queryParams.customerName default "",
+"requestPath" : attributes.rawRequestPath,
+"method" : attributes.method,
+"Content-Type" : attributes.headers."content-type"
+}]]]></customLogger:attributes>
+		</customLogger:start>
+		<ee:transform doc:name="Transform Message" doc:id="bb4c625e-69de-41f0-a49a-fbc33b23bdc3">
+			<ee:message>
+			</ee:message>
+			<ee:variables>
+				<ee:set-variable variableName="clientId"><![CDATA[%dw 2.0
+output application/json
+---
+p('secure::api.clientId')
+]]></ee:set-variable>
+				<ee:set-variable variableName="clientSecret"><![CDATA[%dw 2.0
+output application/java
+---
+p('secure::api.clientSecret')]]></ee:set-variable>
+				<ee:set-variable variableName="customerName"><![CDATA[%dw 2.0
+output application/java
+---
+attributes.queryParams.customerName default ""]]></ee:set-variable>
+				<ee:set-variable variableName="correlationId" ><![CDATA[%dw 2.0
+output application/json
+---
+uuid()]]></ee:set-variable>
+				<ee:set-variable variableName="initialPayload" ><![CDATA[%dw 2.0
+output application/xml
+---
+payload]]></ee:set-variable>
+			
+</ee:variables>
+		</ee:transform>
+		<flow-ref doc:name="glims-authentication-impl-subflow" doc:id="7a2534ef-fc62-40a5-a3eb-4300c54bfca1" name="glims-authentication-impl-subflow" />
+		<choice doc:name="Choice" doc:id="4a5233fe-19f2-4502-b1e1-e8fb3da6cc86">
+					<when expression="#[%dw 2.0
+output application/json
+---
+!isEmpty(vars.initialPayload.putInspectionWorksheetRequest) and !isEmpty(vars.initialPayload.putInspectionWorksheetRequest.Attachment)]">
+						<ee:transform doc:name="putAttachment" doc:id="980ee93b-c240-4884-bd84-4f975aa68153">
+							<ee:message>
+							</ee:message>
+							<ee:variables>
+								<ee:set-variable variableName="putAttachment"><![CDATA[%dw 2.0
+output application/xml
+ns nis https://nis.navarik.net/1.8
+---
+{
+	nis#putAttachment:{
+		nis#Attachment : vars.initialPayload.putInspectionWorksheetRequest.Attachment
+	}
+}
+]]></ee:set-variable>
+								<ee:set-variable variableName="workSheetNumber"><![CDATA[%dw 2.0
+output application/json
+---
+vars.initialPayload.putInspectionWorksheetRequest.Attachment.AttachmentEntity.ReferenceNumber default ""]]></ee:set-variable>
+								<ee:set-variable variableName="entityCode"><![CDATA[%dw 2.0
+output application/json
+---
+vars.initialPayload.putInspectionWorksheetRequest.Attachment.AttachmentEntity.EntityTypeCode default ""]]></ee:set-variable>
+							</ee:variables>
+						</ee:transform>
+						<flow-ref doc:name="glims-p-api-impl-search-delete-putAttachments-Sub_Flow" doc:id="4ad6d395-4d55-4c5a-9534-260e058446da" name="glims-p-api-impl-search-delete-putAttachments-Sub_Flow" />
+					</when>
+					<otherwise>
+						<ee:transform doc:name="Transform Message" doc:id="f6adadb3-332d-43e6-951d-ea0ada2d08d0">
+							<ee:message>
+								<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+ns nis https://nis.navarik.net/1.8
+---
+{
+	nis#putInspectionWorksheetResponse: {
+        nis#Code : "FAILED",
+        nis#Message: "No Attachment Received"
+    }
+}
+]]></ee:set-payload>
+							</ee:message>
+						</ee:transform>
+					</otherwise>
+				</choice>
+		<choice doc:name="Choice" doc:id="b654aacb-50ab-4368-bb82-acc658662ec6" >
+			<when expression="#[!isEmpty(payload.putAttachmentResponse.Attachment.@referenceNumber)]">
+				<choice doc:name="Choice" doc:id="1c0da735-1cac-4281-a28c-db9126ab2e4d">
+			<when expression="#[%dw 2.0
+output application/json
+---
+(!isEmpty(vars.initialPayload.putInspectionWorksheetRequest)) and (!isEmpty(vars.initialPayload.putInspectionWorksheetRequest.putInspectionWorksheet))]">
+				<ee:transform doc:name="putInspectionWorksheet" doc:id="32d3d931-4fdf-419a-a533-60085cfa5a72">
+					<ee:message>
+					</ee:message>
+					<ee:variables>
+						<ee:set-variable variableName="putInspectionWorksheet"><![CDATA[%dw 2.0
+output application/xml
+ns nis https://nis.navarik.net/1.8
+---
+{
+	nis#putInspectionWorksheet: vars.initialPayload.putInspectionWorksheetRequest.putInspectionWorksheet
+}
+]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+				<flow-ref doc:name="glims-p-api-impl-putInspectionWorksheetSub_Flow" doc:id="8e8be1b0-c56a-4fae-bb0d-76c483a42073" name="glims-p-api-impl-putInspectionWorksheetSub_Flow" />
+			</when>
+			<otherwise>
+				<ee:transform doc:name="Transform Message" doc:id="67e25b5f-6db5-45de-aa94-ef910cc4b691">
+					<ee:message>
+						<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+ns nis https://nis.navarik.net/1.8
+---
+{
+	nis#putInspectionWorksheetResponse: {
+        nis#Code : "FAILED",
+        nis#Message : "No Inspection worksheet received"
+    }
+}
+]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</otherwise>
+		</choice>
+			</when>
+		</choice>
+		<customLogger:end doc:name="End" doc:id="15cd88cf-cdcb-4ea0-92ac-2d225cbdc80a" config-ref="Custom_Logger_Config" />
+		
+		
+	</sub-flow>
+	<sub-flow name="glims-p-api-impl-putInspectionWorksheetSub_Flow" doc:id="d6d5a380-eccd-4ef4-af38-aa591a10e212" >
+		<logger level="INFO" doc:name="Request Message" doc:id="f06e262a-116d-4883-8b71-f32e520b1314" message="#[vars.putInspectionWorksheet]" />
+		<http:request method="POST" doc:name="PUT Inspection Worksheet - Request" doc:id="9bdbf891-6408-41ce-90c3-62f878a0c592" config-ref="HTTP_Request_configuration" path="${https.requestor.worksheetPath}" responseTimeout="${https.requestor.responseTimeout}">
+			<http:body><![CDATA[#[vars.putInspectionWorksheet]]]></http:body>
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"sessionName" : vars.loginDetails.loginResponse.SessionName,
+	"client_secret" : vars.clientSecret,
+	"sessionId" : vars.loginDetails.loginResponse.SessionId,
+	"client_id" : vars.clientId,
+	"x-correlation-id": vars.correlationId
+}]]]></http:headers>
+			<http:query-params><![CDATA[#[output application/java
+---
+{
+	"customerName" : vars.customerName
+}]]]></http:query-params>
+		</http:request>
+		<logger level="INFO" doc:name="Put Inspection Worksheet Response" doc:id="888cd64d-a29c-4711-81ca-71a9bc0da843" message="#[payload]" />
+	
+</sub-flow>
+	<sub-flow name="glims-p-api-impl-search-delete-putAttachments-Sub_Flow" doc:id="24e9d956-d639-4b0c-afeb-93434eaf2bf4" >
+		<http:request method="GET" doc:name="Search Attachment Request" doc:id="73f8d57c-23a6-4e95-ad75-1f2aab76fafe" config-ref="HTTP_Request_configuration" path="${https.requestor.searchAttachmentPath}" responseTimeout="#[120000]">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"sessionName" : vars.loginDetails.loginResponse.SessionName,
+	"client_secret" : vars.clientSecret,
+	"sessionId" : vars.loginDetails.loginResponse.SessionId,
+	"client_id" : vars.clientId,
+	"x-correlation-id": vars.correlationId
+}]]]></http:headers>
+			<http:query-params><![CDATA[#[output application/java
+---
+{
+	"customerName" : vars.customerName,
+	"worksheetNumber" : vars.workSheetNumber,
+	"entityTypeCode" : vars.entityCode
+}]]]></http:query-params>
+		</http:request>
+		<ee:transform doc:name="Filter results with INSPECTION_REPORT" doc:id="adc852ef-63db-4126-b4b9-53388a28bc67" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+ns nis https://nis.navarik.net/1.8
+
+var results = payload.searchAttachmentResponse.Results mapObject ((value, key, index) -> {
+           ( nis#Attachment @(nis#referenceNumber : value.@referenceNumber) : value) if(value.AttachmentCategoryCode == "INSPECTION_REPORT")
+        })
+---
+{
+    nis#searchAttachmentResponse : {
+        nis#TotalResultsAvailable : if(!isEmpty(results)) sizeOf(results) else 0,
+        nis#FirstResultPosition: payload.searchAttachmentResponse.FirstResultPosition,
+        nis#ResultsPerPage : payload.searchAttachmentResponse.ResultsPerPage,
+        nis#Results : results
+    }
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Search Attachment Response" doc:id="cc510fc6-9804-4280-9ed9-c8cf735a2a1a" message="#[payload]" />
+		<choice doc:name="Choice" doc:id="b0f4fb05-ca7b-43c8-9403-b9e254da1d68">
+					<when expression="#[!isEmpty(payload.searchAttachmentResponse.Results)]">
+						<ee:transform doc:name="Delete Attachment Request" doc:id="72102dba-8596-409d-afa0-0e64b63b8b5e">
+							<ee:message>
+								<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+ns nis https://nis.navarik.net/1.8
+---
+{
+	nis#deleteAttachment: {
+		nis#Attachment @(nis#referenceNumber: payload.searchAttachmentResponse.Results.Attachment.@referenceNumber): {
+			nis#AttachmentEntity: {
+				nis#EntityTypeCode: payload.searchAttachmentResponse.Results.Attachment.AttachmentEntity.EntityTypeCode,
+				nis#ReferenceNumber: payload.searchAttachmentResponse.Results.Attachment.AttachmentEntity.ReferenceNumber 
+			}
+		}
+	}
+}]]></ee:set-payload>
+							</ee:message>
+						</ee:transform>
+						<http:request method="DELETE" doc:name="Delete Attachment Request" doc:id="5fc5a5e1-80f2-4309-b086-ede983f248d0" config-ref="HTTP_Request_configuration" path="${https.requestor.deleteAttachmentPath}" responseTimeout="${https.requestor.responseTimeout}">
+					<http:headers><![CDATA[#[output application/java
+---
+{
+	"sessionName" : vars.loginDetails.loginResponse.SessionName,
+	"client_secret" : vars.clientSecret,
+	"sessionId" : vars.loginDetails.loginResponse.SessionId,
+	"client_id" : vars.clientId,
+	"x-correlation-id": vars.correlationId
+}]]]></http:headers>
+					<http:query-params><![CDATA[#[output application/java
+---
+{
+	"customerName" : vars.customerName
+}]]]></http:query-params>
+				</http:request>
+						<logger level="INFO" doc:name="Logger" doc:id="edc09396-f9d5-46af-a40b-50e92cdf5588" message="#[payload]" />
+					</when>
+					<otherwise>
+						<logger level="INFO" doc:name="Logger" doc:id="d43c34fe-703b-445c-b775-8a21daf4aa9d" message="No attachment found" />
+					</otherwise>
+				</choice>
+		<http:request method="POST" doc:name="Put Attachment - Request" doc:id="57e12adc-9ccb-420b-973d-2e008a1442c8" config-ref="HTTP_Request_configuration" path="${https.requestor.putAttachmentPath}" responseTimeout="${https.requestor.responseTimeout}">
+					<http:body><![CDATA[#[vars.putAttachment]]]></http:body>
+					<http:headers><![CDATA[#[output application/java
+---
+{
+	"sessionName" : vars.loginDetails.loginResponse.SessionName,
+	"client_secret" : vars.clientSecret,
+	"sessionId" : vars.loginDetails.loginResponse.SessionId,
+	"client_id" : vars.clientId,
+	"x-correlation-id": vars.correlationId
+}]]]></http:headers>
+					<http:query-params><![CDATA[#[output application/java
+---
+{
+	"customerName" : vars.customerName
+}]]]></http:query-params>
+				</http:request>
+		<logger level="INFO" doc:name="Put Attachment Response" doc:id="855e352d-9852-40e5-a7ab-0260f53a3ec1" message="#[payload]" />
+	</sub-flow>	
+
+</mule>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway"
+	xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties"
+	xmlns:os="http://www.mulesoft.org/schema/mule/os"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd 
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd 
+http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd 
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd
+http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd">
+	 <http:listener-config name="glims-p-api-httpListenerConfig" doc:description="HTTP Listner configuration for GLIMS process API">
+        <http:listener-connection host="${https.host}" port="${https.private.port}" protocol="HTTPS" tlsContext="TLS_Context_Listener"/>
+    </http:listener-config>
+    <apikit:config name="glims-p-api-config" api="resource::4544c08b-6266-4a34-a9c6-08041e17cac6:glims-p-api:1.0.4:raml:zip:glims-p-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" doc:description="Router configuration for GLIMS process API"/>
+	<tls:context name="TLS_Context_Listener" doc:name="TLS Context" doc:id="faf1d8ff-c1f2-4ecf-97e9-9950b4005d8e" doc:description="Keystore for Listener">
+		<tls:key-store type="jks" path="${ks.path}" alias="${ks.alias}" keyPassword="${secure::ks.password}" password="${secure::ks.password}" />
+	</tls:context>
+	 <global-property doc:name="Global Property" doc:id="f7741ab8-5473-4a72-b288-d496d77e39fd" name="mule.env" value="test" doc:description="Global envirnoment  variable"/>
+	<global-property doc:name="Global Property" doc:id="93728d10-a694-4f7a-85b2-fe6d8685df25" name="encryption.key" value="Mulesoft@itrk123" doc:description="encrypt key"/>
+	<ee:object-store-caching-strategy name="customer_name_caching_strategy" doc:name="Caching Strategy" doc:id="8d5e3e52-a7e4-4d64-8265-c36d9fd7a45b" keyGenerationExpression="#[vars.customerName]" objectStore="customer_name_os" doc:description="Caching Strategy for caching the customerName"/>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="3f0ca1d5-14d6-4667-9d0e-cd8af31c3d64" basePath="${https.requestor.basePath}" doc:description="HTTP Request for calling System API">
+		<http:request-connection host="${https.requestor.host}" protocol="HTTPS">
+			<tls:context >
+				<tls:trust-store insecure="true" />
+			</tls:context>
+
+		</http:request-connection>
+	</http:request-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="865d9fb3-f17b-4819-ac28-e88f1abcd02a" file="config/${mule.env}-config.yaml" doc:description="Environmental properties"/>
+	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="23835c76-f679-4f4a-8c84-e776b19aa8eb" file="config/${mule.env}-config.yaml" key="${encryption.key}" doc:description="Secure Properties"/>
+	<os:object-store name="customer_name_os" doc:name="Object store" doc:id="69e3fe60-2161-4123-a82f-247cd12c6d44" persistent="false" entryTtl="${cache.ttl}" entryTtlUnit="HOURS" expirationInterval="${cache.expirationInterval}" doc:description="Object store for authentication "/>
+	<tls:context name="TLS_Context_Truststore" doc:name="TLS Context" doc:id="10ef0419-d905-4fd2-a130-43e31964a6b7" doc:description="Global TLS configuration for Truststore">
+		<tls:trust-store path="${ts.path}" password="${secure::ts.password}" type="jks" />
+	</tls:context>
+	<import doc:name="Import" doc:id="809ce209-7786-475d-86b6-692b3e52055e" file="mule-common-error-handling-utility.xml" doc:description="Common error handler utility"/>
+	 <!-- <api-gateway:autodiscovery apiId="${api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="1af2725b-d019-483f-9fb4-65e2457f5920" flowRef="glims-p-api-main" doc:description="API Instance  ID"/>	 -->
+
+</mule>

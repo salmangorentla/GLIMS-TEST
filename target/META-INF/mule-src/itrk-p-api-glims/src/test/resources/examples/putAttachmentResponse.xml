@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nis:putAttachmentResponse xmlns:nis="https://nis.navarik.net/1.8">
+    <nis:Attachment referenceNumber="78896437"/>
+</nis:putAttachmentResponse>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nis:loginResponse xmlns:nis="https://nis.navarik.net/1.8">
+    <nis:SessionName>NVSESSID</nis:SessionName>
+    <nis:SessionId>9sooa3cr9r0kilf962ttfbshu0</nis:SessionId>
+</nis:loginResponse>

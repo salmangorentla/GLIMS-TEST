@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>4544c08b-6266-4a34-a9c6-08041e17cac6</groupId>
+  <artifactId>ecm_fragments</artifactId>
+  <version>1.0.12</version>
+  <name>ECM_Fragments</name>
+  <properties>
+    <classifier>raml-fragment</classifier>
+    <main>ecm_fragments.raml</main>
+    <originalFormatVersion>1.0</originalFormatVersion>
+    <projectId>079cffac-c7e4-43a5-9061-e5b75bc23835</projectId>
+    <branchId>master</branchId>
+    <commitId>d7fc192f7d87075e9beb0396ece42014681d9fa3</commitId>
+    <type>raml-fragment</type>
+    <mainFile>ecm_fragments.raml</mainFile>
+  </properties>
+  <repositories>
+    <repository>
+      <id>anypoint-exchange</id>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+    </repository>
+  </repositories>
+</project>

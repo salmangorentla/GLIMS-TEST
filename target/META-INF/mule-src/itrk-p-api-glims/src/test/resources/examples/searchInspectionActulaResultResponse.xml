@@ -1,0 +1,2262 @@
+<?xml version='1.0' encoding='UTF-8'?>
+      <nis:searchInspectionActualResultResponse xmlns:nis="https://nis.navarik.net/1.8">
+         <nis:TotalResultsAvailable>2</nis:TotalResultsAvailable>
+         <nis:FirstResultPosition>1</nis:FirstResultPosition>
+         <nis:ResultsPerPage>25</nis:ResultsPerPage>
+         <nis:Results>
+            <nis:InspectionActualResult nis:referenceNumber="20E462896-01" nis:revisionNumber="1">
+               <nis:DateCreated>2020-04-26T09:55:07</nis:DateCreated>
+               <nis:DateModified>2021-11-26T16:53:02</nis:DateModified>
+               <nis:Creator nis:referenceNumber="40866383">
+                  <nis:UserAccountName>sequirk</nis:UserAccountName>
+                  <nis:PersonName>Sarah Quirk</nis:PersonName>
+               </nis:Creator>
+               <nis:Modifier nis:referenceNumber="58121768">
+                  <nis:UserAccountName>schandra1</nis:UserAccountName>
+                  <nis:PersonName>Sravanthi Chandra</nis:PersonName>
+               </nis:Modifier>
+               <nis:DateAccepted>2021-11-26T16:47:28</nis:DateAccepted>
+               <nis:DateSubmitted>2021-11-26T16:53:02</nis:DateSubmitted>
+               <nis:DraftDateSubmitted/>
+               <nis:WorksheetStatusCode>QUALITY_SUBMITTED</nis:WorksheetStatusCode>
+               <nis:InspectionCompany nis:referenceNumber="12978">
+                  <nis:Name>Intertek - Oil, Chemical and Agri</nis:Name>
+               </nis:InspectionCompany>
+               <nis:InspectionDate>
+                  <nis:Type>BL_DATE</nis:Type>
+                  <nis:Value>2021-11-25</nis:Value>
+               </nis:InspectionDate>
+               <nis:InspectorReferenceNumber/>
+               <nis:MainInspectorName>Test Mulesoft</nis:MainInspectorName>
+               <nis:OtherInspectors/>
+               <nis:CasRegistrationNumber>--</nis:CasRegistrationNumber>
+               <nis:QuantityDeterminationCode/>
+               <nis:QuantityDeterminationReason/>
+               <nis:InvoiceQuantityMeasureCode/>
+               <nis:InvoiceQuantityUnitCode/>
+               <nis:BlTcv/>
+               <nis:BlTcvM315c/>
+               <nis:BlTcvTonnesAir/>
+               <nis:BlNsv/>
+               <nis:BlNsvM315c/>
+               <nis:BlNsvTonnesAir/>
+               <nis:BlNsvMtAir/>
+               <nis:BlNsvMtVac/>
+               <nis:BlGsv/>
+               <nis:BlGsvM315c/>
+               <nis:BlGsvTonnesAir/>
+               <nis:BlGsvMtAir/>
+               <nis:BlGsvMtVac/>
+               <nis:BlObqTcv/>
+               <nis:BlObqFw/>
+               <nis:BlObqGsvLiquid/>
+               <nis:BlObqGsvNonLiquid/>
+               <nis:TcvAfterLoading/>
+               <nis:TCVAfterLoadingM315c/>
+               <nis:TCVAfterLoadingTonnesAir/>
+               <nis:GsvAfterLoading/>
+               <nis:GSVAfterLoadingM315c/>
+               <nis:GSVAfterLoadingTonnesAir/>
+               <nis:BlVcfTableCode/>
+               <nis:BlDensity15Degc/>
+               <nis:BlApiGravity/>
+               <nis:BlApiGravity2/>
+               <nis:BlApiMethodName/>
+               <nis:BlSedimentWaterPerc/>
+               <nis:BlWaterMethodName/>
+               <nis:BlVef/>
+               <nis:BlOrderNumber/>
+               <nis:Consignor/>
+               <nis:Consignee/>
+               <nis:Receiver/>
+               <nis:Berth/>
+               <nis:InspectionStartDate/>
+               <nis:InspectionEndDate/>
+               <nis:NumSamplesForDisposal/>
+               <nis:NextLocationName/>
+               <nis:NextLocationEta/>
+               <nis:FinalLocationName/>
+               <nis:FinalLocationEta/>
+               <nis:HighSulphurFuelOilArrival/>
+               <nis:LowSulphurFuelOilArrival/>
+               <nis:HighSulphurFuelOilSailing/>
+               <nis:LowSulphurFuelOilSailing/>
+               <nis:HighSulphurFuelOilLelPerc/>
+               <nis:LowSulphurFuelOilLelPerc/>
+               <nis:DieselOilArrival/>
+               <nis:DieselOilSailing/>
+               <nis:Comment/>
+               <nis:Conditions/>
+               <nis:CowComment/>
+               <nis:HseComment/>
+               <nis:LettersOfProtest/>
+               <nis:LossComment/>
+               <nis:RequestRetestComment/>
+               <nis:RetestReason nis:referenceNumber="">
+                  <nis:Name/>
+               </nis:RetestReason>
+               <nis:ResultsDueDate>2020-04-11 01:00:00</nis:ResultsDueDate>
+               <nis:IsLastRevision>1</nis:IsLastRevision>
+               <nis:IsOffSpec>0</nis:IsOffSpec>
+               <nis:IsQualityInspectionRequired>1</nis:IsQualityInspectionRequired>
+               <nis:IsQualityRetestNeeded>0</nis:IsQualityRetestNeeded>
+               <nis:IsQualitySubmitted>1</nis:IsQualitySubmitted>
+               <nis:IsQuantityAggregate>1</nis:IsQuantityAggregate>
+               <nis:IsQuantityInspectionRequired>1</nis:IsQuantityInspectionRequired>
+               <nis:IsQuantityRetestNeeded>0</nis:IsQuantityRetestNeeded>
+               <nis:IsQuantitySubmitted>0</nis:IsQuantitySubmitted>
+               <nis:IsTimelogRequired>1</nis:IsTimelogRequired>
+               <nis:IsInspectorCreated>0</nis:IsInspectorCreated>
+               <nis:IcwApprovalStatusCode/>
+               <nis:IcwRejectComment/>
+               <nis:Trip>
+                  <nis:TripNumber>INTV006FIN-2004-0025</nis:TripNumber>
+                  <nis:Region nis:referenceNumber="27289267">
+                     <nis:Name>AP</nis:Name>
+                  </nis:Region>
+                  <nis:BusinessGroup nis:referenceNumber="27290276">
+                     <nis:Name>MOA</nis:Name>
+                  </nis:BusinessGroup>
+                  <nis:Desk nis:referenceNumber="30998045">
+                     <nis:Name>Product - SLC</nis:Name>
+                  </nis:Desk>
+                  <nis:Operator nis:referenceNumber="40866383">
+                     <nis:UserAccountName>sequirk</nis:UserAccountName>
+                     <nis:PersonName>Sarah Quirk</nis:PersonName>
+                  </nis:Operator>
+               </nis:Trip>
+               <nis:Parcel nis:referenceNumber="635304" nis:revisionNumber="1">
+                  <nis:ExternalReferenceNumber/>
+                  <nis:ContractNumber/>
+                  <nis:ParcelActivityCode>LOAD</nis:ParcelActivityCode>
+                  <nis:Grade nis:referenceNumber="27289627">
+                     <nis:Name>MOGAS BASE (4)</nis:Name>
+                     <nis:ExternalReferenceNumber>90020044</nis:ExternalReferenceNumber>
+                  </nis:Grade>
+                  <nis:SourceLocation nis:referenceNumber="27291070">
+                     <nis:Name>ALTONA REFINERY, AUSTRALIA</nis:Name>
+                     <nis:ExternalReferenceNumber>RFAUALT01</nis:ExternalReferenceNumber>
+                     <nis:Country>
+                        <nis:Code>AU</nis:Code>
+                        <nis:Name>Australia</nis:Name>
+                     </nis:Country>
+                  </nis:SourceLocation>
+                  <nis:Transport nis:referenceNumber="36183027">
+                     <nis:Name>HIGH WIND</nis:Name>
+                     <nis:ExternalReferenceNumber>VS00052035</nis:ExternalReferenceNumber>
+                  </nis:Transport>
+                  <nis:NominatedQuantity>
+                     <nis:UnitOfMeasure nis:referenceNumber="22168526">
+                        <nis:Name>Barrels</nis:Name>
+                        <nis:ExternalReferenceNumber>BB6</nis:ExternalReferenceNumber>
+                     </nis:UnitOfMeasure>
+                     <nis:Value>132000</nis:Value>
+                  </nis:NominatedQuantity>
+                  <nis:VoyageParcel nis:referenceNumber="57742244">
+                     <nis:ExternalReferenceNumber>4697287-30</nis:ExternalReferenceNumber>
+                     <nis:Voyage nis:referenceNumber="57738678">
+                        <nis:ExternalReferenceNumber>INTV006FIN-2004-0025</nis:ExternalReferenceNumber>
+                     </nis:Voyage>
+                     <nis:TripNumber>INTV006FIN-2004-0025</nis:TripNumber>
+                  </nis:VoyageParcel>
+                  <nis:Nomination nis:referenceNumber="20E462896" nis:revisionNumber="1"/>
+               </nis:Parcel>
+               <nis:InspectionQualitySet nis:referenceNumber="1907176">
+                  <nis:Description>Gasoline Blendstock Post Load Certification</nis:Description>
+                  <nis:Comment/>
+                  <nis:IsBuySell>0</nis:IsBuySell>
+                  <nis:SampleLocationOption>
+                     <nis:SampleLocation>
+                        <nis:Code>SHIP_AS_PER_STANDARD_TERMINAL_PRACTICE</nis:Code>
+                        <nis:Name>Ship – As Per Standard Terminal Practice</nis:Name>
+                     </nis:SampleLocation>
+                  </nis:SampleLocationOption>
+                  <nis:IsCustodyTransferSample>0</nis:IsCustodyTransferSample>
+                  <nis:InspectionQualitySample>
+                     <nis:Description>Test Quality</nis:Description>
+                     <nis:SealNumber/>
+                     <nis:SampleLocation>
+                        <nis:Code>SHIP_AS_PER_STANDARD_TERMINAL_PRACTICE</nis:Code>
+                        <nis:Name>Ship – As Per Standard Terminal Practice</nis:Name>
+                     </nis:SampleLocation>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949315">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296341">
+                              <nis:Name>Appearance</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949316">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="28260614">
+                              <nis:Name>Distillation Residue</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                              <nis:Name>Percent volume</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>t</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949317">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="29948577">
+                              <nis:Name>Final Boiling Point</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>210</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168532">
+                              <nis:Name>Celsius</nis:Name>
+                              <nis:ExternalReferenceNumber>CEL</nis:ExternalReferenceNumber>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949318">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36581246">
+                              <nis:Name>Density @ 15 deg C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168561">
+                              <nis:Name>Kilograms per litre</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949319">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36739459">
+                              <nis:Name>Exist Gum Unwash</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>10</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168582">
+                              <nis:Name>Milligrams per 100 millilitres</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949320">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27297014">
+                              <nis:Name>Sulfur</nis:Name>
+                              <nis:ExternalReferenceNumber>S</nis:ExternalReferenceNumber>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>150</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168583">
+                              <nis:Name>Milligrams per kilogram</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949321">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296341">
+                              <nis:Name>Appearance</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949322">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="34907793">
+                              <nis:Name>MON</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949323">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36580124">
+                              <nis:Name>Oxygenates added</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>0</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949324">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296445">
+                              <nis:Name>Mercaptan Sulfur</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>20</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168601">
+                              <nis:Name>Parts per million</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949325">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296348">
+                              <nis:Name>Benzene</nis:Name>
+                              <nis:ExternalReferenceNumber>BZV</nis:ExternalReferenceNumber>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>4</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                              <nis:Name>Percent volume</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949326">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296341">
+                              <nis:Name>Appearance</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="37054098">
+                           <nis:Name>VISUAL INSPECTION</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>10</nis:Value>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec>0</nis:IsOffSpec>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949327">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296462">
+                              <nis:Name>Olefins</nis:Name>
+                              <nis:ExternalReferenceNumber>OLEV</nis:ExternalReferenceNumber>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>60</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                              <nis:Name>Percent volume</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949328">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296342">
+                              <nis:Name>Aromatics</nis:Name>
+                              <nis:ExternalReferenceNumber>ARVO</nis:ExternalReferenceNumber>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                              <nis:Name>Percent volume</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949329">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="37013069">
+                              <nis:Name>Corrosion Ihnibitor/ Lubricity Improver Optional</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168584">
+                              <nis:Name>Milligrams per litre</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949330">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="37873359">
+                              <nis:Name>90% Evaporated</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="34907697">
+                              <nis:Name>C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949331">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="37873358">
+                              <nis:Name>50% Evaporated</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="34907697">
+                              <nis:Name>C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949332">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="37873357">
+                              <nis:Name>10% Evaporated</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="34907697">
+                              <nis:Name>C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949333">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="29948583">
+                              <nis:Name>Initial Boiling Point</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="34907697">
+                              <nis:Name>C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949334">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296483">
+                              <nis:Name>Research Octane Number (RON)</nis:Name>
+                              <nis:ExternalReferenceNumber>RON</nis:ExternalReferenceNumber>
+                           </nis:QualityTest>
+                           <nis:BuyMin>80</nis:BuyMin>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949335">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="37873356">
+                              <nis:Name>Corrosion - Copper Strip (3 hrs @ 50C)</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949336">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="35102123">
+                              <nis:Name>Corrosion, Silver Strip (3 hrs @ 50 ºC)</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949337">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36577193">
+                              <nis:Name>Doctor test</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>0</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949338">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36688874">
+                              <nis:Name>Colour</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="">
+                              <nis:Name/>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949339">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="34908032">
+                              <nis:Name>Vapour Pressure @ 37.8C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>75</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>0</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168562">
+                              <nis:Name>Kilopascals</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949340">
+                           <nis:OriginalSlate nis:referenceNumber="38729336">
+                              <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="28260618">
+                              <nis:Name>Distillation Loss</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                              <nis:Name>Percent volume</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment>Test</nis:Comment>
+                        <nis:IsRetestNeeded>0</nis:IsRetestNeeded>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>1</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                  </nis:InspectionQualitySample>
+               </nis:InspectionQualitySet>
+            </nis:InspectionActualResult>
+            <nis:InspectionActualResult nis:referenceNumber="20E462896-02" nis:revisionNumber="1">
+               <nis:DateCreated>2020-04-26T09:55:08</nis:DateCreated>
+               <nis:DateModified>2020-04-26T09:55:08</nis:DateModified>
+               <nis:Creator nis:referenceNumber="40866383">
+                  <nis:UserAccountName>sequirk</nis:UserAccountName>
+                  <nis:PersonName>Sarah Quirk</nis:PersonName>
+               </nis:Creator>
+               <nis:Modifier nis:referenceNumber="40866383">
+                  <nis:UserAccountName>sequirk</nis:UserAccountName>
+                  <nis:PersonName>Sarah Quirk</nis:PersonName>
+               </nis:Modifier>
+               <nis:DateAccepted/>
+               <nis:DateSubmitted/>
+               <nis:DraftDateSubmitted/>
+               <nis:WorksheetStatusCode>PENDING</nis:WorksheetStatusCode>
+               <nis:InspectionCompany nis:referenceNumber="12978">
+                  <nis:Name>Intertek - Oil, Chemical and Agri</nis:Name>
+               </nis:InspectionCompany>
+               <nis:InspectionDate>
+                  <nis:Type>BL_DATE</nis:Type>
+                  <nis:Value/>
+               </nis:InspectionDate>
+               <nis:InspectorReferenceNumber/>
+               <nis:MainInspectorName/>
+               <nis:OtherInspectors/>
+               <nis:CasRegistrationNumber>--</nis:CasRegistrationNumber>
+               <nis:QuantityDeterminationCode/>
+               <nis:QuantityDeterminationReason/>
+               <nis:InvoiceQuantityMeasureCode/>
+               <nis:InvoiceQuantityUnitCode/>
+               <nis:BlTcv/>
+               <nis:BlTcvM315c/>
+               <nis:BlTcvTonnesAir/>
+               <nis:BlNsv/>
+               <nis:BlNsvM315c/>
+               <nis:BlNsvTonnesAir/>
+               <nis:BlNsvMtAir/>
+               <nis:BlNsvMtVac/>
+               <nis:BlGsv/>
+               <nis:BlGsvM315c/>
+               <nis:BlGsvTonnesAir/>
+               <nis:BlGsvMtAir/>
+               <nis:BlGsvMtVac/>
+               <nis:BlObqTcv/>
+               <nis:BlObqFw/>
+               <nis:BlObqGsvLiquid/>
+               <nis:BlObqGsvNonLiquid/>
+               <nis:TcvAfterLoading/>
+               <nis:TCVAfterLoadingM315c/>
+               <nis:TCVAfterLoadingTonnesAir/>
+               <nis:GsvAfterLoading/>
+               <nis:GSVAfterLoadingM315c/>
+               <nis:GSVAfterLoadingTonnesAir/>
+               <nis:BlVcfTableCode/>
+               <nis:BlDensity15Degc/>
+               <nis:BlApiGravity/>
+               <nis:BlApiGravity2/>
+               <nis:BlApiMethodName/>
+               <nis:BlSedimentWaterPerc/>
+               <nis:BlWaterMethodName/>
+               <nis:BlVef/>
+               <nis:BlOrderNumber/>
+               <nis:Consignor/>
+               <nis:Consignee/>
+               <nis:Receiver/>
+               <nis:Berth/>
+               <nis:InspectionStartDate/>
+               <nis:InspectionEndDate/>
+               <nis:NumSamplesForDisposal/>
+               <nis:NextLocationName/>
+               <nis:NextLocationEta/>
+               <nis:FinalLocationName/>
+               <nis:FinalLocationEta/>
+               <nis:HighSulphurFuelOilArrival/>
+               <nis:LowSulphurFuelOilArrival/>
+               <nis:HighSulphurFuelOilSailing/>
+               <nis:LowSulphurFuelOilSailing/>
+               <nis:HighSulphurFuelOilLelPerc/>
+               <nis:LowSulphurFuelOilLelPerc/>
+               <nis:DieselOilArrival/>
+               <nis:DieselOilSailing/>
+               <nis:Comment/>
+               <nis:Conditions/>
+               <nis:CowComment/>
+               <nis:HseComment/>
+               <nis:LettersOfProtest/>
+               <nis:LossComment/>
+               <nis:RequestRetestComment/>
+               <nis:RetestReason nis:referenceNumber="">
+                  <nis:Name/>
+               </nis:RetestReason>
+               <nis:ResultsDueDate>2020-04-11 01:00:00</nis:ResultsDueDate>
+               <nis:IsLastRevision>1</nis:IsLastRevision>
+               <nis:IsOffSpec>0</nis:IsOffSpec>
+               <nis:IsQualityInspectionRequired>1</nis:IsQualityInspectionRequired>
+               <nis:IsQualityRetestNeeded/>
+               <nis:IsQualitySubmitted>0</nis:IsQualitySubmitted>
+               <nis:IsQuantityAggregate>1</nis:IsQuantityAggregate>
+               <nis:IsQuantityInspectionRequired>1</nis:IsQuantityInspectionRequired>
+               <nis:IsQuantityRetestNeeded/>
+               <nis:IsQuantitySubmitted>0</nis:IsQuantitySubmitted>
+               <nis:IsTimelogRequired>1</nis:IsTimelogRequired>
+               <nis:IsInspectorCreated>0</nis:IsInspectorCreated>
+               <nis:IcwApprovalStatusCode/>
+               <nis:IcwRejectComment/>
+               <nis:Trip>
+                  <nis:TripNumber>INTV006FIN-2004-0025</nis:TripNumber>
+                  <nis:Region nis:referenceNumber="27289267">
+                     <nis:Name>AP</nis:Name>
+                  </nis:Region>
+                  <nis:BusinessGroup nis:referenceNumber="27290276">
+                     <nis:Name>MOA</nis:Name>
+                  </nis:BusinessGroup>
+                  <nis:Desk nis:referenceNumber="30998045">
+                     <nis:Name>Product - SLC</nis:Name>
+                  </nis:Desk>
+                  <nis:Operator nis:referenceNumber="40866383">
+                     <nis:UserAccountName>sequirk</nis:UserAccountName>
+                     <nis:PersonName>Sarah Quirk</nis:PersonName>
+                  </nis:Operator>
+               </nis:Trip>
+               <nis:Parcel nis:referenceNumber="635305" nis:revisionNumber="1">
+                  <nis:ExternalReferenceNumber/>
+                  <nis:ContractNumber/>
+                  <nis:ParcelActivityCode>LOAD</nis:ParcelActivityCode>
+                  <nis:Grade nis:referenceNumber="27289389">
+                     <nis:Name>CSO / MCB</nis:Name>
+                     <nis:ExternalReferenceNumber>90005001</nis:ExternalReferenceNumber>
+                  </nis:Grade>
+                  <nis:SourceLocation nis:referenceNumber="27291070">
+                     <nis:Name>ALTONA REFINERY, AUSTRALIA</nis:Name>
+                     <nis:ExternalReferenceNumber>RFAUALT01</nis:ExternalReferenceNumber>
+                     <nis:Country>
+                        <nis:Code>AU</nis:Code>
+                        <nis:Name>Australia</nis:Name>
+                     </nis:Country>
+                  </nis:SourceLocation>
+                  <nis:Transport nis:referenceNumber="36183027">
+                     <nis:Name>HIGH WIND</nis:Name>
+                     <nis:ExternalReferenceNumber>VS00052035</nis:ExternalReferenceNumber>
+                  </nis:Transport>
+                  <nis:NominatedQuantity>
+                     <nis:UnitOfMeasure nis:referenceNumber="22168526">
+                        <nis:Name>Barrels</nis:Name>
+                        <nis:ExternalReferenceNumber>BB6</nis:ExternalReferenceNumber>
+                     </nis:UnitOfMeasure>
+                     <nis:Value>90000</nis:Value>
+                  </nis:NominatedQuantity>
+                  <nis:VoyageParcel nis:referenceNumber="57742239">
+                     <nis:ExternalReferenceNumber>4697287-10</nis:ExternalReferenceNumber>
+                     <nis:Voyage nis:referenceNumber="57738678">
+                        <nis:ExternalReferenceNumber>INTV006FIN-2004-0025</nis:ExternalReferenceNumber>
+                     </nis:Voyage>
+                     <nis:TripNumber>INTV006FIN-2004-0025</nis:TripNumber>
+                  </nis:VoyageParcel>
+                  <nis:Nomination nis:referenceNumber="20E462896" nis:revisionNumber="1"/>
+               </nis:Parcel>
+               <nis:InspectionQualitySet nis:referenceNumber="1907177">
+                  <nis:Description>Shore Tank Results</nis:Description>
+                  <nis:Comment>&lt;p>&lt;span style="font-size:14px">MCB has been sold to VITOL.&amp;nbsp; Cost for Quality testing is to shared 50/50 between Mobil and VITOL.&lt;/span>&lt;/p></nis:Comment>
+                  <nis:IsBuySell>0</nis:IsBuySell>
+                  <nis:SampleLocationOption>
+                     <nis:SampleLocation>
+                        <nis:Code>STANDARD_TERMINAL_PRACTICE</nis:Code>
+                        <nis:Name>As Per Standard Terminal Practice</nis:Name>
+                     </nis:SampleLocation>
+                  </nis:SampleLocationOption>
+                  <nis:IsCustodyTransferSample>0</nis:IsCustodyTransferSample>
+                  <nis:InspectionQualitySample>
+                     <nis:Description/>
+                     <nis:SealNumber/>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949341">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36581246">
+                              <nis:Name>Density @ 15 deg C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>990</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="34907696">
+                              <nis:Name>kg/m3</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949342">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296338">
+                              <nis:Name>Aluminium</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168583">
+                              <nis:Name>Milligrams per kilogram</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949343">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296495">
+                              <nis:Name>Silicon</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168583">
+                              <nis:Name>Milligrams per kilogram</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949344">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296491">
+                              <nis:Name>Sediment by Extraction</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>0.5</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="36687042">
+                              <nis:Name>Percent by Weight</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949345">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="31369065">
+                              <nis:Name>Water By Distillation</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>0.6</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="30004136">
+                              <nis:Name>Volume Percent (EMEA)</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949346">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="35008515">
+                              <nis:Name>Sediment, Total</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>0.15</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="31304218">
+                              <nis:Name>weight percent</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949347">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="34578832">
+                              <nis:Name>Ash</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>0.15</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="34578821">
+                              <nis:Name>% mass</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949348">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36684072">
+                              <nis:Name>Kinematic Viscosity @ 50 deg C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>60</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168534">
+                              <nis:Name>Centistokes</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949349">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296354">
+                              <nis:Name>Carbon Residue</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>10</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168649">
+                              <nis:Name>mass%</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949350">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36666748">
+                              <nis:Name>Strong Acid No</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>0</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="34931860">
+                              <nis:Name>mgKOH/g</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949351">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296455">
+                              <nis:Name>N - Heptane Insolubles</nis:Name>
+                              <nis:ExternalReferenceNumber>C7NS</nis:ExternalReferenceNumber>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168649">
+                              <nis:Name>mass%</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949352">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296533">
+                              <nis:Name>Vanadium</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>10</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168583">
+                              <nis:Name>Milligrams per kilogram</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949353">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="34907706">
+                              <nis:Name>Aluminium plus Silicon</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168583">
+                              <nis:Name>Milligrams per kilogram</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949354">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296408">
+                              <nis:Name>Flash Point (PMCC)</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin>60</nis:BuyMin>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168532">
+                              <nis:Name>Celsius</nis:Name>
+                              <nis:ExternalReferenceNumber>CEL</nis:ExternalReferenceNumber>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949355">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27297014">
+                              <nis:Name>Sulfur</nis:Name>
+                              <nis:ExternalReferenceNumber>S</nis:ExternalReferenceNumber>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>0.4</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168615">
+                              <nis:Name>Percent weight</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949356">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296498">
+                              <nis:Name>Sodium</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168583">
+                              <nis:Name>Milligrams per kilogram</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949357">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296480">
+                              <nis:Name>Pour Point</nis:Name>
+                              <nis:ExternalReferenceNumber>POR</nis:ExternalReferenceNumber>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>45</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168532">
+                              <nis:Name>Celsius</nis:Name>
+                              <nis:ExternalReferenceNumber>CEL</nis:ExternalReferenceNumber>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949358">
+                           <nis:OriginalSlate nis:referenceNumber="38727944">
+                              <nis:Name>MOA MCB Spec</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="35008514">
+                              <nis:Name>Sodium plus Vanadium</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>1</nis:IsReportOnly>
+                           <nis:IsRequired>0</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168583">
+                              <nis:Name>Milligrams per kilogram</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                  </nis:InspectionQualitySample>
+               </nis:InspectionQualitySet>
+               <nis:InspectionQualitySet nis:referenceNumber="1907178">
+                  <nis:Description>MCB Post-Load Results</nis:Description>
+                  <nis:Comment>&lt;p>&lt;span style="font-size:14px">MCB has been sold to VITOL.&amp;nbsp; Cost for Quality testing is to shared 50/50 between Mobil and VITOL.&lt;/span>&lt;/p></nis:Comment>
+                  <nis:IsBuySell>0</nis:IsBuySell>
+                  <nis:SampleLocationOption>
+                     <nis:SampleLocation>
+                        <nis:Code>SHIP_AS_PER_STANDARD_TERMINAL_PRACTICE</nis:Code>
+                        <nis:Name>Ship – As Per Standard Terminal Practice</nis:Name>
+                     </nis:SampleLocation>
+                  </nis:SampleLocationOption>
+                  <nis:IsCustodyTransferSample>0</nis:IsCustodyTransferSample>
+                  <nis:InspectionQualitySample>
+                     <nis:Description/>
+                     <nis:SealNumber/>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949359">
+                           <nis:OriginalSlate nis:referenceNumber="38727957">
+                              <nis:Name>MOA MCB Post Load Test</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="36581246">
+                              <nis:Name>Density @ 15 deg C</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin/>
+                           <nis:BuyMax>990</nis:BuyMax>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="34907696">
+                              <nis:Name>kg/m3</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                     <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="19949360">
+                           <nis:OriginalSlate nis:referenceNumber="38727957">
+                              <nis:Name>MOA MCB Post Load Test</nis:Name>
+                           </nis:OriginalSlate>
+                           <nis:QualityTest nis:referenceNumber="27296408">
+                              <nis:Name>Flash Point (PMCC)</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:QualityTest>
+                           <nis:BuyMin>60</nis:BuyMin>
+                           <nis:BuyMax/>
+                           <nis:SellMin/>
+                           <nis:SellMax/>
+                           <nis:Typical/>
+                           <nis:IsNumericResult>1</nis:IsNumericResult>
+                           <nis:IsReportOnly>0</nis:IsReportOnly>
+                           <nis:IsRequired>1</nis:IsRequired>
+                           <nis:IsAdditional>0</nis:IsAdditional>
+                           <nis:IsChargeable>1</nis:IsChargeable>
+                           <nis:IsManualPricing>0</nis:IsManualPricing>
+                           <nis:UnitOfMeasure nis:referenceNumber="22168532">
+                              <nis:Name>Celsius</nis:Name>
+                              <nis:ExternalReferenceNumber>CEL</nis:ExternalReferenceNumber>
+                           </nis:UnitOfMeasure>
+                           <nis:Comment/>
+                        </nis:InspectionQualityTest>
+                        <nis:Method nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:Method>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:MathOperatorCode/>
+                        <nis:Value/>
+                        <nis:Comment/>
+                        <nis:IsRetestNeeded/>
+                        <nis:IsOffSpec/>
+                        <nis:IsNotPerformed>0</nis:IsNotPerformed>
+                     </nis:InspectionQualityResult>
+                  </nis:InspectionQualitySample>
+               </nis:InspectionQualitySet>
+            </nis:InspectionActualResult>
+         </nis:Results>
+      </nis:searchInspectionActualResultResponse>

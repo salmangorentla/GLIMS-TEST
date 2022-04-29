@@ -1,0 +1,37 @@
+https:
+  host: "0.0.0.0"
+  private:
+    port: "8092"
+  requestor:
+    host: "api-np.intertek.com"
+    #host: "internal-int-np-itrk-dlb.lb.anypointdns.net"
+    basePath: "/itrk-navarik-s-test-api"
+    loginPath: "/api/navarik/login"
+    searchInspectionPath: "/api/navarik/searchInspectionActualResult"
+    searchParcelPath: "/api/navarik/searchParcel"
+    worksheetPath: "/api/navarik/putInspectionWorksheet"
+    searchAttachmentPath: "/api/navarik/searchAttachment"
+    deleteAttachmentPath: "/api/navarik/deleteAttachment"
+    putAttachmentPath: "/api/navarik/putAttachment"
+    responseTimeout: "600000"
+    
+api:
+  id: "17428216"
+  clientId: "![XcGK363xv0kpBgWbX3s2qM6U5fa0zlv3Z2sO/eu8n/3XOcEM/Fy3TXEnWH1tN3Oe]"
+  clientSecret: "![UYlDvNFbeOsntshER4BI92OdAfePhgx52Wo1ZBHuntMf217WwiRdK7cZjulfTN/O]"
+
+ks:
+  path: "keystore.jks"
+  alias: "mule"
+  password: "![Z2nAldVRRS26MrSlGayyxw==]"
+ts:
+  path: "truststore.jks"
+  password: "![Z2nAldVRRS26MrSlGayyxw==]"
+
+cache:
+  ttl: "6"
+  expirationInterval: "10"
+  
+app: 
+  name: "itrk-p-api-glims"
+  version: "1.0.0"

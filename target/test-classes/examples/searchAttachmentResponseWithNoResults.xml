@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nis:searchAttachmentResponse xmlns:nis="https://nis.navarik.net/1.8">
+    <nis:TotalResultsAvailable>69</nis:TotalResultsAvailable>
+    <nis:FirstResultPosition>1</nis:FirstResultPosition>
+    <nis:ResultsPerPage>5</nis:ResultsPerPage>
+    <nis:Results/>
+</nis:searchAttachmentResponse>
