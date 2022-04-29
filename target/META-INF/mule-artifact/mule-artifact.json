@@ -1,0 +1,40 @@
+{
+  "configs": [
+    "global-config.xml",
+    "error-handler.xml",
+    "glims-p-api-impl.xml",
+    "glims-p-api.xml"
+  ],
+  "secureProperties": [
+    "anypoint.platform.client_id",
+    "anypoint.platform.client_secret",
+    "encryption.key",
+    "cloudhub.username",
+    "cloudhub.password"
+  ],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:itrk-p-api-glims:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.3.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "application-types.xml",
+        "config/test-config.yaml",
+        "error-handler.xml",
+        "glims-p-api-impl.xml",
+        "glims-p-api.xml",
+        "global-config.xml",
+        "keystore.jks",
+        "log4j2.xml",
+        "truststore.jks"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

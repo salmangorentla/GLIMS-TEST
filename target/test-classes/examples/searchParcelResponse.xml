@@ -1,0 +1,1807 @@
+<?xml version='1.0' encoding='UTF-8'?>
+      <nis:searchParcelResponse xmlns:nis="https://nis.navarik.net/1.8">
+         <nis:TotalResultsAvailable>1</nis:TotalResultsAvailable>
+         <nis:FirstResultPosition>1</nis:FirstResultPosition>
+         <nis:ResultsPerPage>25</nis:ResultsPerPage>
+         <nis:Results>
+            <nis:Parcel nis:referenceNumber="635304">
+               <nis:Nomination nis:referenceNumber="20E462896" nis:revisionNumber="1"/>
+               <nis:ExternalReferenceNumber/>
+               <nis:ContractNumber/>
+               <nis:NominationTypeCode>MARINE_INSP</nis:NominationTypeCode>
+               <nis:ParcelStatusCode>ACCEPTED</nis:ParcelStatusCode>
+               <nis:ParcelActivityCode>LOAD</nis:ParcelActivityCode>
+               <nis:Grade nis:referenceNumber="27289627">
+                  <nis:Name>MOGAS BASE (4)</nis:Name>
+                  <nis:ExternalReferenceNumber>90020044</nis:ExternalReferenceNumber>
+               </nis:Grade>
+               <nis:SourceLocation nis:referenceNumber="27291070">
+                  <nis:Name>ALTONA REFINERY, AUSTRALIA (Australia)</nis:Name>
+                  <nis:ExternalReferenceNumber>RFAUALT01</nis:ExternalReferenceNumber>
+               </nis:SourceLocation>
+               <nis:DestinationLocation nis:referenceNumber="">
+                  <nis:Name/>
+                  <nis:ExternalReferenceNumber/>
+               </nis:DestinationLocation>
+               <nis:Eta>2020-04-09T00:00:00</nis:Eta>
+               <nis:NominationParcelTransport nis:referenceNumber="2915758">
+                  <nis:Transport nis:referenceNumber="36183027">
+                     <nis:Name>HIGH WIND (9740574)</nis:Name>
+                     <nis:ExternalReferenceNumber>VS00052035</nis:ExternalReferenceNumber>
+                  </nis:Transport>
+                  <nis:Quantity>132000</nis:Quantity>
+                  <nis:QuantityTolerance>
+                     <nis:Code/>
+                     <nis:Name/>
+                  </nis:QuantityTolerance>
+                  <nis:VoyageNumber/>
+               </nis:NominationParcelTransport>
+               <nis:NominatedQuantity>
+                  <nis:UnitOfMeasure nis:referenceNumber="22168526">
+                     <nis:Name>Barrels</nis:Name>
+                     <nis:ExternalReferenceNumber>BB6</nis:ExternalReferenceNumber>
+                  </nis:UnitOfMeasure>
+                  <nis:Value>132000</nis:Value>
+               </nis:NominatedQuantity>
+               <nis:DateCreated>2020-04-26T09:52:34</nis:DateCreated>
+               <nis:DateModified>2021-11-26T16:47:28</nis:DateModified>
+               <nis:DateAccepted>2021-11-26T16:47:28</nis:DateAccepted>
+               <nis:HubOffice nis:referenceNumber="17302">
+                  <nis:Name>ICB Australia</nis:Name>
+               </nis:HubOffice>
+               <nis:LocalOffice nis:referenceNumber="18933">
+                  <nis:Name>ICB Australia - Melbourne</nis:Name>
+               </nis:LocalOffice>
+               <nis:NominationParcelOffice>
+                  <nis:Office nis:referenceNumber="18933">
+                     <nis:Name>ICB Australia - Melbourne</nis:Name>
+                  </nis:Office>
+               </nis:NominationParcelOffice>
+               <nis:Trip>
+                  <nis:TripNumber>INTV006FIN-2004-0025</nis:TripNumber>
+                  <nis:Region nis:referenceNumber="27289267">
+                     <nis:Name>AP</nis:Name>
+                  </nis:Region>
+                  <nis:BusinessGroup nis:referenceNumber="27290276">
+                     <nis:Name>MOA</nis:Name>
+                  </nis:BusinessGroup>
+                  <nis:Desk nis:referenceNumber="30998045">
+                     <nis:Name>Product - SLC</nis:Name>
+                  </nis:Desk>
+                  <nis:Operator nis:referenceNumber="40866383">
+                     <nis:UserAccountName>sequirk</nis:UserAccountName>
+                     <nis:PersonName>Sarah Quirk</nis:PersonName>
+                  </nis:Operator>
+               </nis:Trip>
+               <nis:InvoiceInstruction>
+                  <nis:CostAllocation nis:referenceNumber="2105908">
+                     <nis:Percent>100</nis:Percent>
+                     <nis:CostAllocationTypeCode>QUANTITY</nis:CostAllocationTypeCode>
+                     <nis:InvoiceParty nis:referenceNumber="28722288">
+                        <nis:Name>Mobil Oil Australia Pty. Ltd. - Australia Branch</nis:Name>
+                     </nis:InvoiceParty>
+                     <nis:LegalEntity nis:referenceNumber="31376188">
+                        <nis:Name>Mobil Oil Australia Pty. Ltd. - Australia Branch (4541)</nis:Name>
+                     </nis:LegalEntity>
+                  </nis:CostAllocation>
+               </nis:InvoiceInstruction>
+               <nis:WorksheetInstruction nis:referenceNumber="20E462896-01" nis:revisionNumber="1">
+                  <nis:DateCreated>2020-04-26T09:55:07</nis:DateCreated>
+                  <nis:DateModified>2021-11-26T16:53:02</nis:DateModified>
+                  <nis:IsQualityRetestNeeded>0</nis:IsQualityRetestNeeded>
+                  <nis:IsQuantityRetestNeeded>0</nis:IsQuantityRetestNeeded>
+                  <nis:WorksheetStatusCode>QUALITY_SUBMITTED</nis:WorksheetStatusCode>
+                  <nis:RequestRetestComment/>
+                  <nis:QuantityMatrix nis:referenceNumber="22168652">
+                     <nis:Name>Shore Data (for Load)</nis:Name>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LINE_DISPLACEMENT_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LINE_DISPLACEMENT_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LINE_DISPLACEMENT_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LINE_DISPLACEMENT_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LINE_DISPLACEMENT_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LINE_DISPLACEMENT_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_GSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>RECALC_BL_NSV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LINE_DISPLACEMENT_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                  </nis:QuantityMatrix>
+                  <nis:QuantityMatrix nis:referenceNumber="22168653">
+                     <nis:Name>Vessel Data (for Load)</nis:Name>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_FREE_WATER</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>TCV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>THEO_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>BBLS_60F</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_FREE_WATER</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>TCV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>THEO_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>M3_15C</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_FREE_WATER</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>TCV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>1</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>THEO_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_AIR</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_FREE_WATER</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>TCV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>THEO_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>TONNES_VAC</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_FREE_WATER</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>TCV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>THEO_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>LONG_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_FREE_WATER</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>TCV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>THEO_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>SHORT_TONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>LOT_OBQ_SLOPS_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>OBQ_FREE_WATER</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>TCV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_AFTER_LOADING</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>GSV_NON_LIQUID</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                     <nis:QuantityMeasureUnit>
+                        <nis:QuantityMeasureCode>THEO_TCV</nis:QuantityMeasureCode>
+                        <nis:QuantityUnitCode>US_GALLONS</nis:QuantityUnitCode>
+                        <nis:IsRequired>0</nis:IsRequired>
+                     </nis:QuantityMeasureUnit>
+                  </nis:QuantityMatrix>
+                  <nis:InspectionQualitySet nis:referenceNumber="1907176">
+                     <nis:Description>Gasoline Blendstock Post Load Certification</nis:Description>
+                     <nis:Comment/>
+                     <nis:IsBuySell>0</nis:IsBuySell>
+                     <nis:SampleLocationOption>
+                        <nis:SampleLocation>
+                           <nis:Code>SHIP_AS_PER_STANDARD_TERMINAL_PRACTICE</nis:Code>
+                           <nis:Name>Ship – As Per Standard Terminal Practice</nis:Name>
+                        </nis:SampleLocation>
+                     </nis:SampleLocationOption>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949315">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27296341">
+                           <nis:Name>Appearance</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="37054098">
+                              <nis:Name>VISUAL INSPECTION</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949316">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="28260614">
+                           <nis:Name>Distillation Residue</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                           <nis:Name>Percent volume</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294942">
+                              <nis:Name>ASTM D86</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D86</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949317">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="29948577">
+                           <nis:Name>Final Boiling Point</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax>210</nis:BuyMax>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168532">
+                           <nis:Name>Celsius</nis:Name>
+                           <nis:ExternalReferenceNumber>CEL</nis:ExternalReferenceNumber>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294942">
+                              <nis:Name>ASTM D86</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D86</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949318">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="36581246">
+                           <nis:Name>Density @ 15 deg C</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168561">
+                           <nis:Name>Kilograms per litre</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294717">
+                              <nis:Name>ASTM D4052</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D4052</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949319">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="36739459">
+                           <nis:Name>Exist Gum Unwash</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax>10</nis:BuyMax>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168582">
+                           <nis:Name>Milligrams per 100 millilitres</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294704">
+                              <nis:Name>ASTM D381</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D381</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949320">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27297014">
+                           <nis:Name>Sulfur</nis:Name>
+                           <nis:ExternalReferenceNumber>S</nis:ExternalReferenceNumber>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax>150</nis:BuyMax>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168583">
+                           <nis:Name>Milligrams per kilogram</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294816">
+                              <nis:Name>ASTM D5453</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D5453</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949321">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27296341">
+                           <nis:Name>Appearance</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="37054098">
+                              <nis:Name>VISUAL INSPECTION</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949322">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="34907793">
+                           <nis:Name>MON</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294655">
+                              <nis:Name>ASTM D2700</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D2700</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949323">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="36580124">
+                           <nis:Name>Oxygenates added</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>0</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="34907776">
+                              <nis:Name>DECLARATION</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949324">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27296445">
+                           <nis:Name>Mercaptan Sulfur</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax>20</nis:BuyMax>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168601">
+                           <nis:Name>Parts per million</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294677">
+                              <nis:Name>ASTM D3227</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D3227</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949325">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27296348">
+                           <nis:Name>Benzene</nis:Name>
+                           <nis:ExternalReferenceNumber>BZV</nis:ExternalReferenceNumber>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax>4</nis:BuyMax>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                           <nis:Name>Percent volume</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294823">
+                              <nis:Name>ASTM D5580</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D5580</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949326">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27296341">
+                           <nis:Name>Appearance</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="37054098">
+                              <nis:Name>VISUAL INSPECTION</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949327">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27296462">
+                           <nis:Name>Olefins</nis:Name>
+                           <nis:ExternalReferenceNumber>OLEV</nis:ExternalReferenceNumber>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax>60</nis:BuyMax>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                           <nis:Name>Percent volume</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294570">
+                              <nis:Name>ASTM D1319</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D1319</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949328">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27296342">
+                           <nis:Name>Aromatics</nis:Name>
+                           <nis:ExternalReferenceNumber>ARVO</nis:ExternalReferenceNumber>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                           <nis:Name>Percent volume</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294570">
+                              <nis:Name>ASTM D1319</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D1319</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949329">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="37013069">
+                           <nis:Name>Corrosion Ihnibitor/ Lubricity Improver Optional</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168584">
+                           <nis:Name>Milligrams per litre</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="35007776">
+                              <nis:Name>BY DECLARATION</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949330">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="37873359">
+                           <nis:Name>90% Evaporated</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="34907697">
+                           <nis:Name>C</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294942">
+                              <nis:Name>ASTM D86</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D86</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949331">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="37873358">
+                           <nis:Name>50% Evaporated</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="34907697">
+                           <nis:Name>C</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294942">
+                              <nis:Name>ASTM D86</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D86</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949332">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="37873357">
+                           <nis:Name>10% Evaporated</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="34907697">
+                           <nis:Name>C</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294942">
+                              <nis:Name>ASTM D86</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D86</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949333">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="29948583">
+                           <nis:Name>Initial Boiling Point</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="34907697">
+                           <nis:Name>C</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294942">
+                              <nis:Name>ASTM D86</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D86</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949334">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="27296483">
+                           <nis:Name>Research Octane Number (RON)</nis:Name>
+                           <nis:ExternalReferenceNumber>RON</nis:ExternalReferenceNumber>
+                        </nis:QualityTest>
+                        <nis:BuyMin>80</nis:BuyMin>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294654">
+                              <nis:Name>ASTM D2699</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D2699</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949335">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="37873356">
+                           <nis:Name>Corrosion - Copper Strip (3 hrs @ 50C)</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294567">
+                              <nis:Name>ASTM D130</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D130</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949336">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="35102123">
+                           <nis:Name>Corrosion, Silver Strip (3 hrs @ 50 ºC)</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294930">
+                              <nis:Name>ASTM D7671</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D7671</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949337">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="36577193">
+                           <nis:Name>Doctor test</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>0</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27295184">
+                              <nis:Name>IP 30</nis:Name>
+                              <nis:ExternalReferenceNumber>IP 30</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949338">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="36688874">
+                           <nis:Name>Colour</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="">
+                           <nis:Name/>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27295494">
+                              <nis:Name>Visual</nis:Name>
+                              <nis:ExternalReferenceNumber>Visual</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949339">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="34908032">
+                           <nis:Name>Vapour Pressure @ 37.8C</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax>75</nis:BuyMax>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>0</nis:IsNumericResult>
+                        <nis:IsReportOnly>0</nis:IsReportOnly>
+                        <nis:IsRequired>1</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168562">
+                           <nis:Name>Kilopascals</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="29948131">
+                              <nis:Name>ASTM D5191</nis:Name>
+                              <nis:ExternalReferenceNumber/>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                     <nis:InspectionQualityTest nis:referenceNumber="19949340">
+                        <nis:OriginalSlate nis:referenceNumber="38729336">
+                           <nis:Name>MOA Gasoline Blendstock Export Spec</nis:Name>
+                        </nis:OriginalSlate>
+                        <nis:QualityTest nis:referenceNumber="28260618">
+                           <nis:Name>Distillation Loss</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:QualityTest>
+                        <nis:BuyMin/>
+                        <nis:BuyMax/>
+                        <nis:SellMin/>
+                        <nis:SellMax/>
+                        <nis:Typical/>
+                        <nis:IsNumericResult>1</nis:IsNumericResult>
+                        <nis:IsReportOnly>1</nis:IsReportOnly>
+                        <nis:IsRequired>0</nis:IsRequired>
+                        <nis:IsAdditional>0</nis:IsAdditional>
+                        <nis:IsChargeable>1</nis:IsChargeable>
+                        <nis:IsManualPricing>0</nis:IsManualPricing>
+                        <nis:UnitOfMeasure nis:referenceNumber="22168614">
+                           <nis:Name>Percent volume</nis:Name>
+                           <nis:ExternalReferenceNumber/>
+                        </nis:UnitOfMeasure>
+                        <nis:Comment/>
+                        <nis:MethodOption>
+                           <nis:Method nis:referenceNumber="27294942">
+                              <nis:Name>ASTM D86</nis:Name>
+                              <nis:ExternalReferenceNumber>ASTM D86</nis:ExternalReferenceNumber>
+                           </nis:Method>
+                        </nis:MethodOption>
+                        <nis:RetestInstruction/>
+                     </nis:InspectionQualityTest>
+                  </nis:InspectionQualitySet>
+               </nis:WorksheetInstruction>
+               <nis:TimeLogInstruction nis:referenceNumber="57747848">
+                  <nis:TimeLogStatusCode>PENDING</nis:TimeLogStatusCode>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168257">
+                        <nis:Name>Inspector on-board</nis:Name>
+                        <nis:ExternalReferenceNumber>M181</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168333">
+                        <nis:Name>NOR Tendered</nis:Name>
+                        <nis:ExternalReferenceNumber>M106</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168334">
+                        <nis:Name>Anchor Down</nis:Name>
+                        <nis:ExternalReferenceNumber>M112</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168335">
+                        <nis:Name>Anchor Up</nis:Name>
+                        <nis:ExternalReferenceNumber>M139</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168338">
+                        <nis:Name>All Fast</nis:Name>
+                        <nis:ExternalReferenceNumber>M157</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168340">
+                        <nis:Name>Commence Preliminary Inspection</nis:Name>
+                        <nis:ExternalReferenceNumber>M184</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168341">
+                        <nis:Name>Finish Preliminary Inspection</nis:Name>
+                        <nis:ExternalReferenceNumber>M187</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168342">
+                        <nis:Name>Hoses Connected (last hose connected)</nis:Name>
+                        <nis:ExternalReferenceNumber>M220</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168346">
+                        <nis:Name>Commence Loading</nis:Name>
+                        <nis:ExternalReferenceNumber>M400</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PARCEL</nis:EventLevelCode>
+                        <nis:ParcelActivityCode>LOAD</nis:ParcelActivityCode>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber="635305"/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168348">
+                        <nis:Name>Finish Loading</nis:Name>
+                        <nis:ExternalReferenceNumber>M403</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PARCEL</nis:EventLevelCode>
+                        <nis:ParcelActivityCode>LOAD</nis:ParcelActivityCode>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber="635305"/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168349">
+                        <nis:Name>Commence Final Inspection</nis:Name>
+                        <nis:ExternalReferenceNumber>M724</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168350">
+                        <nis:Name>Finish Final Inspection</nis:Name>
+                        <nis:ExternalReferenceNumber>M727</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168351">
+                        <nis:Name>Hoses Disconnected (last hose disconnected)</nis:Name>
+                        <nis:ExternalReferenceNumber>M715</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168352">
+                        <nis:Name>Vessel Sailed / Last Line</nis:Name>
+                        <nis:ExternalReferenceNumber>M748</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168402">
+                        <nis:Name>Commence Stripping</nis:Name>
+                        <nis:ExternalReferenceNumber/>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168436">
+                        <nis:Name>Finish Stripping</nis:Name>
+                        <nis:ExternalReferenceNumber/>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168455">
+                        <nis:Name>NOR Accepted</nis:Name>
+                        <nis:ExternalReferenceNumber>M109</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168513">
+                        <nis:Name>Arrived Customary anchorage</nis:Name>
+                        <nis:ExternalReferenceNumber>M100</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="26573397">
+                        <nis:Name>Vessel Called In</nis:Name>
+                        <nis:ExternalReferenceNumber>M145</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="26573398">
+                        <nis:Name>Pre-Released Sail</nis:Name>
+                        <nis:ExternalReferenceNumber>M742</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="26573399">
+                        <nis:Name>Vessel Released</nis:Name>
+                        <nis:ExternalReferenceNumber>M745</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="26573400">
+                        <nis:Name>Cargo Docs on Board</nis:Name>
+                        <nis:ExternalReferenceNumber>M739</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="28152627">
+                        <nis:Name>Sent for / Awaiting Confirmation</nis:Name>
+                        <nis:ExternalReferenceNumber/>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="28152628">
+                        <nis:Name>Received confirmation from the terminal</nis:Name>
+                        <nis:ExternalReferenceNumber/>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="28294502">
+                        <nis:Name>Inspector Called for Initial Inspection</nis:Name>
+                        <nis:ExternalReferenceNumber>M178</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PORT</nis:EventLevelCode>
+                        <nis:ParcelActivityCode/>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber=""/>
+                     <nis:IsRequired>0</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168346">
+                        <nis:Name>Commence Loading</nis:Name>
+                        <nis:ExternalReferenceNumber>M400</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PARCEL</nis:EventLevelCode>
+                        <nis:ParcelActivityCode>LOAD</nis:ParcelActivityCode>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber="635304"/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+                  <nis:Event>
+                     <nis:EventType nis:referenceNumber="22168348">
+                        <nis:Name>Finish Loading</nis:Name>
+                        <nis:ExternalReferenceNumber>M403</nis:ExternalReferenceNumber>
+                        <nis:EventLevelCode>PARCEL</nis:EventLevelCode>
+                        <nis:ParcelActivityCode>LOAD</nis:ParcelActivityCode>
+                        <nis:HasStopDate>0</nis:HasStopDate>
+                     </nis:EventType>
+                     <nis:Parcel nis:referenceNumber="635304"/>
+                     <nis:IsRequired>1</nis:IsRequired>
+                  </nis:Event>
+               </nis:TimeLogInstruction>
+            </nis:Parcel>
+         </nis:Results>
+      </nis:searchParcelResponse>

@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nis:putInspectionWorksheetRequest xmlns:nis="https://nis.navarik.net/1.8">
+    <nis:putInspectionWorksheet>
+        <nis:Worksheet referenceNumber="21M587240-01" revisionNumber="1">
+            <nis:Parcel nis:referenceNumber="826890"/>
+            <nis:WorksheetStatusCode>ALL_SUBMITTED</nis:WorksheetStatusCode>
+            <nis:InspectionDate>
+                <nis:Type>BL_DATE</nis:Type>
+                <nis:Value>2021-07-20</nis:Value>
+            </nis:InspectionDate>
+            <nis:InspectionDate>
+                <nis:Type>OUTTURN_DATE</nis:Type>
+                <nis:Value>2021-08-13</nis:Value>
+            </nis:InspectionDate>
+            <nis:InspectorReferenceNumber>CLF21-28956</nis:InspectorReferenceNumber>
+            <nis:MainInspectorName>Juan Cisternas</nis:MainInspectorName>
+            <nis:OtherInspectors>Jorge Marin</nis:OtherInspectors>
+            <nis:CasRegistrationNumber>068334-30-5</nis:CasRegistrationNumber>
+            <nis:QuantityDeterminationCode>SHORE_TANK_GAUGE</nis:QuantityDeterminationCode>
+            <nis:QuantityDeterminationReason/>
+            <nis:InvoiceQuantityMeasureCode>OUTTURN_GSV</nis:InvoiceQuantityMeasureCode>
+            <nis:InvoiceQuantityUnitCode>TONNES_AIR</nis:InvoiceQuantityUnitCode>
+            <nis:BlTcv>303212.13</nis:BlTcv>
+            <nis:BlNsv>303212.13</nis:BlNsv>
+            <nis:BlNsvMtAir/>
+            <nis:BlNsvMtVac/>
+            <nis:BlGsv>303212.13</nis:BlGsv>
+            <nis:BlGsvMtAir/>
+            <nis:BlGsvMtVac/>
+            <nis:BlObqTcv/>
+            <nis:BlObqFw/>
+            <nis:BlObqGsvLiquid/>
+            <nis:BlObqGsvNonLiquid/>
+            <nis:TcvAfterLoading>305248.93</nis:TcvAfterLoading>
+            <nis:GsvAfterLoading>305248.93</nis:GsvAfterLoading>
+            <nis:BlVcfTableCode/>
+            <nis:BlDensity15Degc/>
+            <nis:BlApiGravity/>
+            <nis:BlApiGravity2/>
+            <nis:BlApiMethodName/>
+            <nis:BlSedimentWaterPerc/>
+            <nis:BlWaterMethodName/>
+            <nis:BlVef/>
+            <nis:BlOrderNumber/>
+            <nis:Consignor/>
+            <nis:Consignee/>
+            <nis:Receiver/>
+            <nis:Berth>Interacid Comp Beth</nis:Berth>
+            <nis:InspectionStartDate/>
+            <nis:InspectionEndDate/>
+            <nis:NumSamplesForDisposal/>
+            <nis:NextLocationName/>
+            <nis:NextLocationEta/>
+            <nis:FinalLocationName/>
+            <nis:FinalLocationEta/>
+            <nis:HighSulphurFuelOilArrival>956.716</nis:HighSulphurFuelOilArrival>
+            <nis:LowSulphurFuelOilArrival/>
+            <nis:HighSulphurFuelOilSailing>944.546</nis:HighSulphurFuelOilSailing>
+            <nis:LowSulphurFuelOilSailing/>
+            <nis:HighSulphurFuelOilLelPerc/>
+            <nis:LowSulphurFuelOilLelPerc/>
+            <nis:DieselOilArrival>68.489</nis:DieselOilArrival>
+            <nis:DieselOilSailing>67.891</nis:DieselOilSailing>
+            <nis:Comment>ACCORDING TO MARATHON INSTRUCTIONS, SAMPLES OF VESSEL COMPOSITE TANK
+                    TAKEN UPON ARRIVAL FIRST DISCHARGE PORT WAS DELIVERY TO BUREAU VERITAS NEW
+                    ORLEANS LAB.</nis:Comment>
+            <nis:Conditions/>
+            <nis:CowComment/>
+            <nis:HseComment/>
+            <nis:LettersOfProtest/>
+            <nis:LossComment></nis:LossComment>
+            <nis:LoadLocation nis:referenceNumber="54403446">
+                </nis:LoadLocation>
+            <nis:IsQuantityAggregate>1</nis:IsQuantityAggregate>
+            <!--Zero or more repetitio-->
+            <nis:InspectionQualitySet nis:referenceNumber="2849643">
+                <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/@referenceNumber -->
+                <nis:IsCustodyTransferSample></nis:IsCustodyTransferSample>
+                <!--1 or more repetitio-->
+                <nis:InspectionQualitySample>
+                    <nis:Description>x</nis:Description>
+                    <nis:SealNumber></nis:SealNumber>
+                    <nis:SampleLocationCode>SHORE_TANK_UML_COMPOSITE</nis:SampleLocationCode>
+                    <!--1 or more repetitio-->
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947544"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[1]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733552"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609204"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>101</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947545"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[2]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733552"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609204"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>282</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947546"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[3]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733319"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609286"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>0.04</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947547"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[4]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733436"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609284"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>9</nis:Value>
+                        <nis:Comment>BuyMax is 8, so comment required</nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947548"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[5]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733504"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609286"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>35</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947549"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[6]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733416"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609284"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>0.009</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947550"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[7]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733260"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="26338381"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>1</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="25947551"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[8]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733564"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="26318051"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>2</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest nis:referenceNumber="25947552"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[9]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733482"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="26318051"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>50.1</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947553"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[10]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733383"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="40361074"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>2</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947554"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[11]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733441"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609284"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>0.2</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947555"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[12]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733397"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609284"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>0.2</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947556"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[13]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733248"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="26318051"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>0.2</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947557"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[14]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733247"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609219"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>0.83</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947558"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[15]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733379"/>
+                        <nis:UnitOfMeasure nis:referenceNumber=""/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>4</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947559"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[16]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733559"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609204"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>52</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947560"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[17]/@referenceNumber -->
+                        <nis:Method referenceNumber="25733490"/>
+                        <nis:UnitOfMeasure referenceNumber="23609204"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>60</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947561"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[18]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25932777"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609288"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>61</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947562"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[19]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733298"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="26351643"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>1.5</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947563"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[20]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733480"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609244"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>460</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947564"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[21]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733474"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609204"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>-1</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947565"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[22]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733309"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609204"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>65</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947566"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[23]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733497"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="40361159"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>90</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947567"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[24]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733497"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="40361159"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>90</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947568"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[25]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733386"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609273"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>14.9</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947569"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[26]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733401"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609273"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>69</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                    <nis:InspectionQualityResult>
+                        <nis:InspectionQualityTest referenceNumber="25947570"/>
+                        <!-- //searchParcelResponse/Results[1]/Parcel[1]/WorksheetInstruction/InspectionQualitySet[1]/InspectionQualityTest[27]/@referenceNumber -->
+                        <nis:Method nis:referenceNumber="25733393"/>
+                        <nis:UnitOfMeasure nis:referenceNumber="23609206"/>
+                        <nis:MathOperatorCode>EQ</nis:MathOperatorCode>
+                        <nis:Value>2</nis:Value>
+                        <nis:Comment></nis:Comment>
+                        <nis:IsOffSpec></nis:IsOffSpec>
+                        <nis:IsNotPerformed></nis:IsNotPerformed>
+                    </nis:InspectionQualityResult>
+                </nis:InspectionQualitySample>
+            </nis:InspectionQualitySet>
+        </nis:Worksheet>
+    </nis:putInspectionWorksheet>
+    <nis:Attachment>
+        <nis:AttachmentCategoryCode>ACCOUNTING DOCUMENTS</nis:AttachmentCategoryCode>
+        <nis:Description/>
+        <nis:MimeType>text/plain</nis:MimeType>
+        <nis:FileName>hello.txt</nis:FileName>
+        <nis:FileContent>SGVsbG8gd29ybGQh</nis:FileContent>
+        <nis:AttachmentEntity>
+            <nis:EntityTypeCode>INVOICE</nis:EntityTypeCode>
+            <nis:ReferenceNumber>7815519</nis:ReferenceNumber>
+        </nis:AttachmentEntity>
+    </nis:Attachment>
+</nis:putInspectionWorksheetRequest>

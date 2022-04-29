@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>4544c08b-6266-4a34-a9c6-08041e17cac6</groupId>
+  <artifactId>glims-p-api</artifactId>
+  <version>1.0.4</version>
+  <name>glims-p-api</name>
+  <properties>
+    <classifier>raml</classifier>
+    <main>glims-p-api.raml</main>
+    <originalFormatVersion>1.0</originalFormatVersion>
+    <apiVersion>1.0</apiVersion>
+    <projectId>91c400b7-1d5f-4ac3-98bb-609e0081776c</projectId>
+    <branchId>master</branchId>
+    <commitId>60ebc87f6883fed6905b87f5346bfe080e728142</commitId>
+    <keywords/>
+    <type>rest-api</type>
+    <mainFile>glims-p-api.raml</mainFile>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>4544c08b-6266-4a34-a9c6-08041e17cac6</groupId>
+      <version>1.0.12</version>
+      <artifactId>ecm_fragments</artifactId>
+      <type>zip</type>
+      <classifier>raml-fragment</classifier>
+    </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <id>anypoint-exchange</id>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+    </repository>
+  </repositories>
+</project>

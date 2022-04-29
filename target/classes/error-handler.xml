@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:cloudhub="http://www.mulesoft.org/schema/mule/cloudhub" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/cloudhub http://www.mulesoft.org/schema/mule/cloudhub/current/mule-cloudhub.xsd">
+	 <cloudhub:config name="CloudHub_Config" doc:name="CloudHub Config" doc:id="2772b07a-662d-4023-9530-4652b6acf2fa" >
+		<cloudhub:connection username="${cloudhub.username}" password="${cloudhub.password}" environment="${environment.id}"/>
+	</cloudhub:config>
+	<error-handler name="error-handlerError_Handler" doc:id="84f8b123-b136-4280-a1db-dca8915bd285" >
+		<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="c7f51ce4-5fd2-4080-8d7f-f18325de2ca0" type="HTTP:INTERNAL_SERVER_ERROR">
+			<ee:transform doc:name="Transform Message" doc:id="9aa711c0-ffb9-4372-8213-e00d45c6d46e">
+				<ee:message>
+					<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	"glims-error" : error.errorMessage.payload."navarik-error"
+}]]></ee:set-payload>
+				</ee:message>
+			</ee:transform>
+			<set-variable value="500" doc:name="httpStatus" doc:id="5bb3909c-7f86-40ad-883b-4995a4a0ba57" variableName="httpStatus" />
+			<logger level="INFO" doc:name="Logger" doc:id="775941f1-cce7-44a7-9861-ff1f57eea2c6" message="#[payload]" /><set-variable value="#[%dw 2.0
+output text/plain
+---
+  'correlationId:' ++ (correlationId default '') ++ ' 
+\n Owner: GLIMS' ++ '
+\n Fault Code: ' ++ (payload.&quot;glims-error&quot;.faultcode) ++ '
+\n Fault String: ' ++ (payload.&quot;glims-error&quot;.faultstring) ++ '
+\n Fault Actor: ' ++ (payload.&quot;glims-error&quot;.faultactor) ++ '
+\n Detail Message: ' ++ (payload.&quot;glims-error&quot;.detail.message  default payload.&quot;glims-error&quot;.faultstring) ++ '
+\n Time: ' ++ now()]" doc:name="alertMessage" doc:id="f283e684-98cb-4452-8543-6aeda98ef3e2" variableName="alertMessage"/>
+			<async doc:name="Async" doc:id="51990177-8412-40e7-a04b-ec2a8709440b" >
+				<flow-ref doc:name="Global-Notification-Sub_Flow" doc:id="f94c627b-a6ac-42f8-8b82-edaeaef304cb" name="Global-Notification-Sub_Flow" />
+			</async>
+		</on-error-continue>
+		<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="2be85306-2050-42ea-8b67-ffc3b265b176" type="ANY">
+			<ee:transform doc:name="Transform Message" doc:id="fc58748a-e465-4312-9f94-d26696fd004f">
+				<ee:message>
+					<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+---
+"glims-error" : {
+	"faultcode" : error.errorType.asString,
+	"faultstring" : error.description,
+	"faultactor" : attributes.rawRequestPath default "",
+	"detail" : {
+		"message" : error.detailedDescription
+	}
+}]]></ee:set-payload>
+				</ee:message>
+			</ee:transform>
+			<flow-ref doc:name="mule-common-error-handling-utilityFlow" doc:id="6ded23f6-666f-40d6-a7ca-018fa67e4ab4" name="mule-common-error-handling-utilityFlow" />
+			<logger level="INFO" doc:name="Logger" doc:id="c4a9a852-f783-4ac8-a9f1-f4efaa53bd1f" message="#[payload]" />
+			<set-variable value="#[output text/plain
+---
+  'correlationId:' ++ correlationId default '' ++ ' 
+\n Owner: GLIMS' ++ '
+\n Fault Code: ' ++ error.errorType.asString ++ '
+\n Fault String: ' ++ error.description ++ '
+\n Fault Actor: ' ++ (attributes.rawRequestPath default '') ++ '
+\n Detail Message: ' ++ error.detailedDescription ++ '
+\n Time: ' ++ now()]" doc:name="alertMessage" doc:id="7275f945-5f90-41fd-96c6-b21b9b04b319" variableName="alertMessage"/>
+			<async doc:name="Async" doc:id="776be76a-b1da-46b5-acc7-4c28c7c83b96" >
+				<flow-ref doc:name="Global-Notification-Sub_Flow" doc:id="2182ca5b-75d1-4c92-b1eb-51e5c3589084" name="Global-Notification-Sub_Flow" />
+			</async>
+		
+</on-error-continue>
+			</error-handler>
+	<sub-flow name="Global-Notification-Sub_Flow" doc:id="c33481bb-8a2c-4ad1-8366-907ba4124e39" >
+		<try doc:name="Try" doc:id="cdd35215-1d6c-4906-a7b0-6bc5e42dc517" >
+			<cloudhub:create-notification doc:name="Create Notification" doc:id="209cf6f2-2957-4cd4-9eab-a734b66c0896" config-ref="CloudHub_Config" domain="${cloudhub.domain}" priority="ERROR">
+				<cloudhub:message ><![CDATA[#[vars.alertMessage]]]></cloudhub:message>
+			</cloudhub:create-notification>
+			<error-handler >
+				<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="ee142c8c-1979-4f1a-ad9d-7fc6072029ba" type="ANY">
+					<ee:transform doc:name="Transform Message" doc:id="f207d969-e922-4f51-8fe2-926aeed7a8a2" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+"glims-error" : {
+	"faultcode" : error.errorType.asString,
+	"faultstring" : error.description,
+	"faultactor" : attributes.rawRequestPath default "",
+	"detail" : {
+		"message" : error.detailedDescription
+	}
+}]]></ee:set-payload>
+						</ee:message>
+					</ee:transform>
+					<flow-ref doc:name="mule-common-error-handling-utilityFlow" doc:id="86e20e6e-e36a-4497-b8e7-0dd2b940a612" name="mule-common-error-handling-utilityFlow"/>
+					<logger level="INFO" doc:name="Logger" doc:id="666e040e-4db2-49c7-8b27-ecb2928b3715" message="#[payload]"/>
+				</on-error-continue>
+			</error-handler>
+		</try>
+	</sub-flow>
+</mule>

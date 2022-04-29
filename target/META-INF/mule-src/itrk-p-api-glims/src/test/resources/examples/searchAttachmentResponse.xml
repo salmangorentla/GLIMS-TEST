@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nis:searchAttachmentResponse xmlns:nis="https://nis.navarik.net/1.8">
+    <nis:TotalResultsAvailable>69</nis:TotalResultsAvailable>
+    <nis:FirstResultPosition>1</nis:FirstResultPosition>
+    <nis:ResultsPerPage>5</nis:ResultsPerPage>
+    <nis:Results>
+        <nis:Attachment referenceNumber="4836959">
+            <nis:DateCreated>2007-12-03T09:12:06</nis:DateCreated>
+            <nis:DateModified>2007-12-03T09:12:06</nis:DateModified>
+            <nis:Creator referenceNumber="19688">
+                <nis:UserAccountName>User</nis:UserAccountName>
+                <nis:PersonName>Person</nis:PersonName>
+            </nis:Creator>
+            <nis:Modifier referenceNumber="19688">
+                <nis:UserAccountName>User</nis:UserAccountName>
+                <nis:PersonName>Person</nis:PersonName>
+            </nis:Modifier>
+            <nis:AttachmentCategoryCode>INSPECTION REPORT</nis:AttachmentCategoryCode>
+            <nis:Description/>
+            <nis:MimeType>application/pdf</nis:MimeType>
+            <nis:FileName>report_7651.pdf</nis:FileName>
+            <nis:FileSize>14</nis:FileSize>
+            <nis:FileContent>SGVsbG8gd29ybGQh</nis:FileContent>
+            <nis:AttachmentEntity>
+                <nis:EntityTypeCode>WORKSHEET</nis:EntityTypeCode>
+                <nis:ReferenceNumber>07A03705-01</nis:ReferenceNumber>
+            </nis:AttachmentEntity>
+        </nis:Attachment>
+    </nis:Results>
+</nis:searchAttachmentResponse>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd ">
+    <flow name="glims-p-api-main">
+        <http:listener config-ref="glims-p-api-httpListenerConfig" path="/api/*">
+            <http:response statusCode="#[vars.httpStatus default 200]">
+                <http:headers>#[vars.outboundHeaders default {}]</http:headers>
+            </http:response>
+            <http:error-response statusCode="#[vars.httpStatus default 500]">
+                <http:body>#[payload]</http:body>
+                <http:headers>#[vars.outboundHeaders default {}]</http:headers>
+            </http:error-response>
+        </http:listener>
+        <apikit:router config-ref="glims-p-api-config" />
+        <error-handler ref="error-handlerError_Handler" />
+    </flow>
+    <flow name="get:\glims\searchInspectionActualResult:glims-p-api-config">
+        <flow-ref doc:name="searchInspectionActualResult-Impl-Flow" doc:id="955f0990-e740-4c08-9aef-768bf8341135" name="searchInspectionActualResult-Impl-Flow" />
+		<error-handler ref="error-handlerError_Handler" />
+    </flow>
+    <flow name="get:\glims\searchParcel:glims-p-api-config">
+        <flow-ref doc:name="searchParcel-Impl-subFlow" doc:id="ed1eb050-46ae-4e05-9ca3-513f2f43c041" name="searchParcel-Impl-subFlow" />
+		<error-handler ref="error-handlerError_Handler" />
+    </flow>
+    <flow name="get:\glims\status:glims-p-api-config">
+        <logger level="INFO" message="get:\glims\status:glims-p-api-config" />
+    </flow>
+    <flow name="post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config">
+        <flow-ref doc:name="putInspectionWorksheet-Impl-subFlow" doc:id="6e12b678-18e8-4ab2-be70-996733bf76d7" name="putInspectionWorksheet-Impl-subFlow" />
+		<error-handler ref="error-handlerError_Handler" />
+    </flow>
+</mule>

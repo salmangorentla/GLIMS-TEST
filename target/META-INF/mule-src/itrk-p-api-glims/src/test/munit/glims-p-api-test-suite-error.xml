@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="glims-p-api-test-suite.xml" />
+	<global-property doc:name="Global Property" doc:id="9f1c68ab-e1b2-4d90-afcf-3679f7530a54" name="environment.id" value="test" />
+	<global-property doc:name="Global Property" doc:id="73d7dbae-ea0d-474f-87a6-7e8a358c23a3" name="cloudhub.username" value="intertekuser" />
+	<global-property doc:name="Global Property" doc:id="4fe47916-f9a6-4205-9313-7a08efb8a2e5" name="cloudhub.password" value="intertekpassword" />
+	<global-property doc:name="Global Property" doc:id="e0712ed6-e827-479f-9ed4-092a58c6c6e0" name="cloudhub.domain" value="itrk-p-api-glims" />
+	<munit:test name="searchInspectionActualResult:HTTP:INTERNAL_SERVER_ERRORTest" doc:id="4dfb3ae9-5480-4244-b962-ea60c56a3340" description="Test" expectedErrorType="HTTP:INTERNAL_SERVER_ERROR">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="authentication" doc:id="1128d4cf-5262-4f87-a28d-00f022d9b73a" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchInspectionActulaResult" doc:id="15d2b27f-0d3a-4514-811b-6203cb10a532" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="cdb90993-4c23-4ba6-bb9b-ae83f3db279d" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchInspectionActulaResultResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+					<munit-tools:error typeId="HTTP:INTERNAL_SERVER_ERROR" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="713e63a6-862a-47cc-abe4-c05ce8a8d3ee">
+				<munit:attributes value='#[{
+ headers: {
+	"sessionName": "NVSESSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil ",
+	"nominationNumber": "20E462896"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to get:\glims\searchInspectionActualResult:glims-p-api-config" doc:id="848a18bf-38ff-4a84-b916-21cfe4c8de1d" name="get:\glims\searchInspectionActualResult:glims-p-api-config"/>
+		</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="ad2316dc-c98a-47ca-89c0-b71c16a9d40b" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="searchParcel:HTTP:INTERNAL_SERVER_ERRORTest" doc:id="9a0bc19f-5429-4a18-9e26-c65edfb78942" description="Test" expectedErrorType="HTTP:INTERNAL_SERVER_ERROR">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Authentication" doc:id="4916b780-eb94-4933-8295-e013adf041a0" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchParcel" doc:id="c70fd657-87f1-4a1e-a4c9-4290852d6cda" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="0b149f62-0394-4383-a8eb-be17b2e74bc8" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchParcelResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+					<munit-tools:error typeId="HTTP:INTERNAL_SERVER_ERROR" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Copy_of_Set Event" doc:id="cd5be74b-d8b4-4772-a6f7-57493cd88bc1" >
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+ queryParams:{
+	"customerName": "ExxonMobil",
+	"parcelReferenceNumber": "635304"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to get:\glims\searchParcel:glims-p-api-config" doc:id="c46d8892-501d-483a-aba9-64a2097dd956" name="get:\glims\searchParcel:glims-p-api-config" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="fa50f830-e825-4bab-8461-28ccc2405f79" is="#[MunitTools::notNullValue()]" expression="#[payload]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml:HTTP:INTERNAL_SERVER_ERRORTest" doc:id="bfde932e-2740-40e1-939a-16770d371ce2" description="Test" expectedErrorType="HTTP:INTERNAL_SERVER_ERROR">
+		<munit:behavior>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="1d378721-b8a0-4270-bd57-33786abd0073" processor="ee:cache">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Cache" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="78a8994b-b660-42b2-a20d-f46fac0e1826" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="customer_name_caching_strategy" attributeName="cachingStrategy-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="HTTP:INTERNAL_SERVER_ERROR" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="ac4b17b3-aa30-4d9b-9d37-5841c5ef63d9" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="authenticationRequest" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="/api/navarik/login" attributeName="path" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="HTTP:INTERNAL_SERVER_ERROR" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="3d32d612-7619-44c5-beba-a340df3129fe" >
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetRequest.xml")]' encoding="UTF-8" mediaType="application/xml" />
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobile",
+	"entityTypeCode": "INVOICE",
+	"worksheetNumber": "7815519"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" doc:id="5fef354d-4bfb-4833-a394-e2ac61f90ef6" name="post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="bcba2c33-b1a4-414c-a85a-137bd53b4727" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml:HTTP:INTERNAL_SERVER_ERRORPutInspectionTest" doc:id="823098ec-6d0b-45de-a8ef-2db8702fbea0" description="Test" expectedErrorType="HTTP:INTERNAL_SERVER_ERROR">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Authentication" doc:id="338a8c9f-193a-497c-b96c-764c4a21e9dc" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putInspectionWorksheet" doc:id="c34eaefe-e493-462a-ba7b-ddc76e014e46" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="94e7fbc4-5e11-40d1-87be-4e6b8065e93b" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+					<munit-tools:error typeId="HTTP:INTERNAL_SERVER_ERROR" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="c1cece0c-85e6-4b9e-84d8-c9b1219ec7df" >
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetRequest.xml")]' encoding="UTF-8" mediaType="application/xml" />
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil",
+	"entityTypeCode": "INVOICE",
+	"worksheetNumber": "7815519"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" doc:id="cd333ae0-6a53-4d5f-89e8-35dc0a6b7a8a" name="post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="e4e23640-6908-4ba3-98a4-0de300feafe4" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml:HTTP:INTERNAL_SERVER_ERRORSearchAttachmentTest" doc:id="37e4209c-1ae3-4525-a693-48a40d842109" description="Test" expectedErrorType="HTTP:INTERNAL_SERVER_ERROR">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Authentication" doc:id="4686cae8-9a4a-4180-88b6-aa4d87f869cf" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putInspectionWorksheet" doc:id="a4a3915d-f32e-41f2-8cd2-0403246750fd" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="94e7fbc4-5e11-40d1-87be-4e6b8065e93b" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchAttachment" doc:id="28c6103e-7c89-401c-b390-b3d5ac8db354" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Search Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="466cf7d4-6d6b-4a51-a14f-f0c5f41b3aae" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="/api/navarik/searchAttachment" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+					<munit-tools:error typeId="HTTP:INTERNAL_SERVER_ERROR" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="6249bbbd-0fc6-4d38-9172-8b06254fdaff">
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetRequest.xml")]' encoding="UTF-8" mediaType="application/xml" />
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil",
+	"entityTypeCode": "INVOICE",
+	"worksheetNumber": "7815519"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" doc:id="4ba980c2-e5b4-4715-8edb-c4fe5d89608f" name="post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="d4c05af5-b4e3-4e34-9caa-5f249a528128" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml:HTTP:INTERNAL_SERVER_ERRORDeleteAttachmentTest" doc:id="aa21583f-b44f-4927-99ce-3d5fa117e89b" description="Test" expectedErrorType="HTTP:INTERNAL_SERVER_ERROR">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Authentication" doc:id="fa53aada-c3ab-484a-a208-4829fb5cf3d2" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putInspectionWorksheet" doc:id="7ea2e34e-5bee-4ef0-8832-0220ef9f24d8" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="94e7fbc4-5e11-40d1-87be-4e6b8065e93b" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchAttachment" doc:id="e4be4828-1ab4-45b4-94ba-648c1502faf8" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Search Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="466cf7d4-6d6b-4a51-a14f-f0c5f41b3aae" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="/api/navarik/searchAttachment" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="deleteAttachment" doc:id="4da5e548-f4e1-41f9-b1fe-4e3bc47eeb4c" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Delete Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="f9f149df-f235-471f-831a-da4d93a823b4" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="/api/navarik/deleteAttachment" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/deleteAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+					<munit-tools:error typeId="HTTP:INTERNAL_SERVER_ERROR" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="22539a10-7517-4af1-9a98-2f8898bab515">
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetRequest.xml")]' encoding="UTF-8" mediaType="application/xml" />
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil",
+	"entityTypeCode": "INVOICE",
+	"worksheetNumber": "7815519"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" doc:id="0d8367b2-06fe-479f-8ee3-ea5f1a21f493" name="post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="c0231cfd-18a6-4a6c-9006-a33b1c7787af" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml:HTTP:INTERNAL_SERVER_ERRORPutAttachmentTest" doc:id="29e56996-9294-463e-8e1f-08133032a693" description="Test" expectedErrorType="HTTP:INTERNAL_SERVER_ERROR">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Authentication" doc:id="4a905aa2-8465-4e97-bd24-ec7ad76d19b1" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putInspectionWorksheet" doc:id="e25d608d-d33e-4279-a637-c20731f6cee8" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="94e7fbc4-5e11-40d1-87be-4e6b8065e93b" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchAttachment" doc:id="2304fd3a-7c78-4be3-87c0-9ac1466b696c" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Search Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="466cf7d4-6d6b-4a51-a14f-f0c5f41b3aae" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="/api/navarik/searchAttachment" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="deleteAttachment" doc:id="35dd1fab-8c95-4df5-b0a9-71a18ec927f3" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Delete Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="f9f149df-f235-471f-831a-da4d93a823b4" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="/api/navarik/deleteAttachment" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/deleteAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putAttachment" doc:id="35d00845-a0f2-4ffe-b350-fdc2281efd9e" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Put Attachment - Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="007b851f-7a9a-4c54-af3d-06be1c3150ab" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="/api/navarik/putAttachment" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+					<munit-tools:error typeId="HTTP:INTERNAL_SERVER_ERROR" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="29466873-54a7-4f9e-b944-d89295af2461" >
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetRequest.xml")]' encoding="UTF-8" mediaType="application/xml" />
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil",
+	"entityTypeCode": "INVOICE",
+	"worksheetNumber": "7815519"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" doc:id="1648fc32-c34f-4194-903c-cf8d97ec7409" name="post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="b9043a54-16fe-4e0d-8fd6-bed7c8093442" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="APIKIT:BAD_REQUEST" doc:id="c58f4334-5926-4de3-9864-cdd605d50c7a" expectedErrorType="APIKIT:BAD_REQUEST">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="828a93d2-e07a-4e36-a973-a78d12471ae9" processor="apikit:router">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="glims-p-api-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:BAD_REQUEST" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		
+</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="ec6f50cd-cceb-4ab6-bce3-5f1c36fa60e6" name="glims-p-api-main"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="03b85a40-0e2d-45a2-a01e-ae994469be7f" processor="logger" atLeast="1">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="INFO" attributeName="level" />
+					<munit-tools:with-attribute whereValue="Logger" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="c4a9a852-f783-4ac8-a9f1-f4efaa53bd1f" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+
+			</munit-tools:verify-call>
+		
+</munit:validation>
+	</munit:test>
+	<munit:test name="APIKIT:NOT_FOUND" doc:id="52126124-d3ff-4401-9155-0d20eebb975f" expectedErrorType="APIKIT:NOT_FOUND">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="9cc00013-1eb2-4241-94ee-245fca3b1413" processor="apikit:router">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="glims-p-api-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:NOT_FOUND" />
+				</munit-tools:then-return>
+			
+</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="3c5ec12d-dc00-46c0-b9c9-46c134b9a481" name="glims-p-api-main"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="654bb3e8-7225-4e30-a43c-a58584b53225" processor="logger" atLeast="1">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="INFO" attributeName="level" />
+					<munit-tools:with-attribute whereValue="Logger" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="c4a9a852-f783-4ac8-a9f1-f4efaa53bd1f" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+
+
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="APIKIT:METHOD_NOT_ALLOWED" doc:id="3768c8e2-414e-4133-89f7-e58fd989772a" expectedErrorType="APIKIT:METHOD_NOT_ALLOWED">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="a3d8e518-feae-44cd-b21e-b8976b217c28" processor="apikit:router">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="glims-p-api-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:METHOD_NOT_ALLOWED" />
+				</munit-tools:then-return>
+			
+</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="41a90a9d-8afc-4706-b124-8b2eed8107f2" name="glims-p-api-main"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="159fd916-6188-4876-87d4-3653a3dabeec" processor="logger" atLeast="1">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="INFO" attributeName="level" />
+					<munit-tools:with-attribute whereValue="Logger" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="c4a9a852-f783-4ac8-a9f1-f4efaa53bd1f" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+
+
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="APIKIT:NOT_ACCEPTABLE" doc:id="2871c165-9197-4fb6-9339-beb61ade6310" expectedErrorType="APIKIT:NOT_ACCEPTABLE">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="1c836729-3fb7-429d-9b3d-46fac0067bd1" processor="apikit:router">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="glims-p-api-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:NOT_ACCEPTABLE" />
+				</munit-tools:then-return>
+			
+</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="b9f47a94-5c1d-477f-8f2e-17a0e1dafeee" name="glims-p-api-main"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="d08bd8e9-0f7c-4c57-a7be-e5f4bd3ed839" processor="logger">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="INFO" attributeName="level" />
+					<munit-tools:with-attribute whereValue="Logger" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="c4a9a852-f783-4ac8-a9f1-f4efaa53bd1f" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+
+
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="APIKIT:UNSUPPORTED_MEDIA_TYPE" doc:id="cf55ee51-571a-428a-9806-f9c501f244ed" expectedErrorType="APIKIT:UNSUPPORTED_MEDIA_TYPE">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="6ead535a-1a08-4d9d-b980-ddf978e60766" processor="apikit:router">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="glims-p-api-config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="APIKIT:UNSUPPORTED_MEDIA_TYPE" />
+				</munit-tools:then-return>
+			
+</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="3b3ca545-2a31-4a74-8bc5-a1e9d6db05ff" name="glims-p-api-main"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="71895e08-54f4-47e8-ad8d-be7b2860e303" processor="logger" atLeast="1">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="INFO" attributeName="level" />
+					<munit-tools:with-attribute whereValue="Logger" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="c4a9a852-f783-4ac8-a9f1-f4efaa53bd1f" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+
+
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="searchInspectionActualResult:Test" doc:id="4602a282-6a95-4331-b0ab-978bc76d988f" description="Test">
+		<munit:behavior>
+			<munit-tools:mock-when doc:name="authentication" doc:id="49e8b7c1-203b-4919-a68c-27694cccc8ed" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchInspectionActulaResult" doc:id="344461e5-2bdc-4221-89a9-54e6886b64b6" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="cdb90993-4c23-4ba6-bb9b-ae83f3db279d" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchInspectionActulaResultResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="searchInspectionActulaResult Request" doc:id="99db41e5-e270-4ea7-aac2-c859a4d699fd" >
+				<munit:attributes value='#[{
+ headers: {
+	"sessionName": "NVSESSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil ",
+	"nominationNumber": "20E462896"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to get:\glims\searchInspectionActualResult:glims-p-api-config" doc:id="1a6c9a69-f14e-4eb2-baaf-6cd3803f6fb4" name="get:\glims\searchInspectionActualResult:glims-p-api-config"/>
+		</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-that doc:name="searchInspectionActualResult" doc:id="f73968a1-6626-4e8b-a754-a17fb3ddcb44" expression="#[payload]" is='#[MunitTools::notNullValue()]'/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="searchParcel:Test" doc:id="0b1d8369-ed5e-4d85-80c0-0ee72dff04be" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Authentication" doc:id="08f36b95-f0cd-42a2-a471-d4d8f6658091" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchParcel" doc:id="6f7ccf06-73e9-4966-b079-9bbe973bb7b2" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="0b149f62-0394-4383-a8eb-be17b2e74bc8" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchParcelResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="searchParcel Request" doc:id="fd8bc9bb-839c-4910-a107-aada8f29331f">
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+ queryParams:{
+	"customerName": "ExxonMobil",
+	"parcelReferenceNumber": "635304"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to get:\glims\searchParcel:glims-p-api-config" doc:id="b19af2cc-8e7c-4c69-a125-592240617cda" name="get:\glims\searchParcel:glims-p-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="searchParcel" doc:id="0d96623b-c4ec-41c0-9a2b-2fe06f11a9ef" expression="#[payload]" is='#[MunitTools::notNullValue()]'/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml:searchAttachmentWithNoResults" doc:id="40a957f5-eeac-48a7-ab0e-34a31ca7cd06" description="Test">
+		<munit:behavior>
+			<munit-tools:mock-when doc:name="Authentication" doc:id="f6410a0b-d4cd-4029-9928-54a42a202cdb" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putInspectionWorksheet" doc:id="0672a612-7ff5-46e7-9f2e-080f9b6fbfba" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="PUT Inspection Worksheet - Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="9bdbf891-6408-41ce-90c3-62f878a0c592" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return>
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchAttachment" doc:id="591bcabe-c761-4822-8bf3-7a4b4e8a5f30" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Search Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="73f8d57c-23a6-4e95-ad75-1f2aab76fafe" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchAttachmentResponseWithNoResults.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putAttachment" doc:id="018d8042-0f1b-4e1f-9e86-ef4013563f01" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Put Attachment - Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="57e12adc-9ccb-420b-973d-2e008a1442c8" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+			<munit:set-event doc:name="putAttachment Request" doc:id="c925e015-1bbf-4042-a3fa-ccfe91427ea1">
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetRequest.xml")]' encoding="UTF-8" mediaType="application/xml" />
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil",
+	"entityTypeCode": "INVOICE",
+	"worksheetNumber": "7815519"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" doc:id="3e53badc-e6cb-4b96-815f-b2dcaba2a362" name="post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" />
+		</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-that doc:name="putAttachment" doc:id="abe02963-6a97-434b-9e37-c679a6b56d64" expression="#[payload]" is='#[MunitTools::notNullValue()]' />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="authentication-impl-subflowTest" doc:id="4d347854-8561-47a2-8bd6-a1f3ceee247c" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="authentication" doc:id="9fecaec6-fd33-4510-8e85-24818da60a0c" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="authentication Request" doc:id="d5f6d94f-37a5-4164-9007-a66fc8cd1f61" >
+				<munit:attributes value='#[{
+ headers: {
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+ queryParams: {
+	"customerName":"ExxonMobil"
+
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to glims-authentication-impl-subflow" doc:id="a4a6b6ec-3084-463c-892b-7eee1726c6ba" name="glims-authentication-impl-subflow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="authentication" doc:id="ee2e4036-00da-40c2-993e-f68d1336d256" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml:Test" doc:id="2ee91076-94c7-4f86-92f6-f3debbe70ef3" description="Test">
+		<munit:behavior>
+			<munit-tools:mock-when doc:name="Authentication" doc:id="f3e520d2-b51d-4c54-9750-053d7a95e8b2" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putInspectionWorksheet" doc:id="456127e8-d781-4ba6-a65e-9303b4ef5945" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="PUT Inspection Worksheet - Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="9bdbf891-6408-41ce-90c3-62f878a0c592" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return>
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchAttachment" doc:id="e0f44281-e8d6-4431-80cc-cdf26da5a69c" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Search Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="73f8d57c-23a6-4e95-ad75-1f2aab76fafe" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="deleteAttachment" doc:id="8b8257f3-8609-4a26-b77a-e44c8c0916e8" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="DELETE" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Delete Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="5fc5a5e1-80f2-4309-b086-ede983f248d0" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/deleteAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putAttachment" doc:id="c3882ff6-f6b5-455c-a052-cb5a80075fc7" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Put Attachment - Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="57e12adc-9ccb-420b-973d-2e008a1442c8" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+			<munit:set-event doc:name="putAttachment Request" doc:id="1a50219d-f9a0-4d4f-a411-be3d1d125eca">
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetRequest.xml")]' encoding="UTF-8" mediaType="application/xml" />
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil",
+	"entityTypeCode": "INVOICE",
+	"worksheetNumber": "7815519"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" doc:id="cdc7815e-96f5-40ff-ad2f-de1e3dd005d5" name="post:\glims\putInspectionWorksheet:application\xml:glims-p-api-config" />
+		</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-that doc:name="putAttachment" doc:id="71be3f1d-a350-438c-84f0-a7e6e9f55dbc" expression="#[payload]" is='#[MunitTools::notNullValue()]' />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml-putAttachmentWithNoResponse" doc:id="d7e452f7-38f6-4a96-8ad5-0d22cddfa0f2" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Authentication" doc:id="530fbd02-c8e1-4a9a-95d6-39093ce96540" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="f7a28cce-7d8b-49e9-8850-fd75b2653a48" >
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorksheetRequestWithNoAttachment.xml")]' encoding="UTF-8" mediaType="application/xml" />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to putInspectionWorksheet-Impl-subFlow" doc:id="5b07c0c5-567d-412b-8a0e-73afb9189849" name="putInspectionWorksheet-Impl-subFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="fa9e4a8f-13c9-46dc-9795-9ae01f85a19c" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="putInspectionWorksheet:application\xml-With-putAttachmentNoResponse-Impl-subFlowTest" doc:id="24e1ce49-2b5f-4310-8948-f389e96ab1ea" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Authentication" doc:id="b0a61fff-d114-4443-88ac-55b688ebce38" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="c7f6e24d-8811-414c-8e73-0f9b9e552142" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/authenticationResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="searchAttachment" doc:id="5f237fef-d758-4b9e-895a-f0035d87c955" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Search Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="73f8d57c-23a6-4e95-ad75-1f2aab76fafe" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/searchAttachmentResponseWithNoResults.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="putAttachment" doc:id="b9ceec69-56e8-41b1-9911-64334589eacb" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Put Attachment - Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="57e12adc-9ccb-420b-973d-2e008a1442c8" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="HTTP_Request_configuration" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/putAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="deleteAttachment" doc:id="c353b1df-7243-4e35-9d09-f68ed95c9a23" processor="http:request" >
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="DELETE" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Delete Attachment Request" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="5fc5a5e1-80f2-4309-b086-ede983f248d0" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[MunitTools::getResourceAsString("examples/deleteAttachmentResponse.xml")]' mediaType="application/xml" encoding="UTF-8" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="SetEvent" doc:id="7e4f1c19-1b85-43d7-b3fa-b29190134bd2">
+				<munit:payload value='#[MunitTools::getResourceAsString("examples/putInspectionWorkSheetWithNoResponseRequest.xml")]' encoding="UTF-8" mediaType="application/xml" />
+				<munit:attributes value='#[{
+ headers: {
+	"seassionName": "NAVASSID",
+	"sessionId": "1a16806tbv236htk4bl6bas8hs",
+	"client_id": "slkdjvbcxmsdjf",
+	"client_secret": "shdblaksjdhka"
+},
+queryParams: {
+	"customerName": "ExxonMobil",
+	"entityTypeCode": "INVOICE",
+	"worksheetNumber": "7815519"
+}
+}]' />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to putInspectionWorksheet-Impl-subFlow" doc:id="4de737c8-565c-4dbf-87db-f4545df9c664" name="putInspectionWorksheet-Impl-subFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="0081a914-1f9a-45f4-a960-894cd63138d8" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+</mule>

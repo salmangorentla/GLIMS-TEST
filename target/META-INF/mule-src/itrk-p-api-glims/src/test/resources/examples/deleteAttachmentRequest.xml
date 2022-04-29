@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nis:deleteAttachment xmlns:nis="https://nis.navarik.net/1.8">
+         <nis:Attachment referenceNumber="8787767">
+            <nis:AttachmentEntity>
+               <nis:EntityTypeCode>INVOICE</nis:EntityTypeCode>
+               <nis:ReferenceNumber>8343288</nis:ReferenceNumber>
+            </nis:AttachmentEntity>
+         </nis:Attachment>
+</nis:deleteAttachment>
